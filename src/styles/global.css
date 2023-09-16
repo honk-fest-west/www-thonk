@@ -17,6 +17,18 @@
   src: local('Berlin Sans FB Bold'), url('/fonts/BRLNSB.woff') format('woff');
 }
 
+@layer components {
+  .text-stroke-1 {
+    -webkit-text-stroke: 1px black;
+  }
+  .text-stroke-2 {
+    -webkit-text-stroke: 2px black;
+  }
+  .text-stroke-3 {
+    -webkit-text-stroke: 3px black;
+  }
+}
+
 
 /* https://uicolors.app/create */
 :root {
