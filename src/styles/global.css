@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Berlin Sans FB';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Berlin Sans FB'), url('/fonts/BRLNSR.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Berlin Sans FB Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Berlin Sans FB Bold'), url('/fonts/BRLNSB.woff') format('woff');
+}
+
+
 /* https://uicolors.app/create */
 :root {
   --color-base-50: 237 255 253;
@@ -27,7 +43,7 @@
   --color-primary-800: 135 29 139;
   --color-primary-900: 113 29 114;
   --color-primary-950: 75 7 75;
-  
+
   --color-secondary-50: 255 248 235;
   --color-secondary-100: 255 236 198;
   --color-secondary-200: 255 215 136;
