@@ -1,16 +1,73 @@
 ---
-
+import { Image } from "astro:assets";
+import BaseLayout from "@layouts/BaseLayout.astro";
+import ContentContainer from "@components/ContentContainer.astro";
+import snail from "@images/snail.png";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout>
+  <div class="flex flex-col gap-8">
+    <div class="w-full px-10 flex flex-col justify-center items-center">
+      <h2 class="text-center text-stroke-3 text-7xl font-bold text-primary-400 mb-6">Oct 21st, 2023</h2>
+    </div>
+    <ContentContainer className="mx-6 xl:mx-0">
+      <p class="mb-6">
+        Get spooky at Tacoma’s first annual HONK! Fest on Oct 21st, 2023 in the
+        <span class="font-semibold">McKinley Hill</span> neighborhood. Put on your favorite costume (Galloping
+        Gertie anyone?) and bring a funky noisemaker. Meet your neighbors, local
+        musicians, maybe even join a band!
+      </p>
+      <p class="mb-6">
+        Tacoma HONK! Fest is an accessible community music festival driven by
+        the energetic performances of street bands in public spaces. And it’s
+        free of charge!
+      </p>
+      <p class="mb-6">
+        Tacoma HONK! Fest will feature performances by HONK! bands from the PNW
+        and local cultural groups at two locations throughout the day. Instead
+        of formal stages, bands will be moving and marching and dancing around.
+        The audience is always welcome to join in!
+      </p>
+      <div class="flex flex-wrap sm:flex-nowrap">
+        <div
+          class="w-full sm:w-fit flex-none mb-6 flex justify-center items-center"
+        >
+          <Image class="w-fit" src={snail} alt="Shelby on the snaildrum" />
+        </div>
+        <div class="flex-1">
+          <p class="mb-6">
+            On snaildrum, we have Shelby, our festival’s slimy mascot. Inspired
+            by the moon snail, Shelby represents curiosity, delight, and that
+            sweet dash of peculiarity that comes with any HONK! Festival.
+          </p>
+          <p class="mb-6">
+            We encourage you to walk, bike, or take public transit to the
+            festival. Feel free to walk (or dance) between the two stage areas
+            set up in the McKinley Hill business district.
+          </p>
+        </div>
+      </div>
+    </ContentContainer>
+    <div class="w-full px-12 py-12 flex justify-center items-center">
+      <h2 class="text-stroke-3 text-7xl font-bold text-primary-400">More info soon!</h2>
+    </div>
+    <ContentContainer>
+      <h2 class="text-stroke-1 text-3xl font-bold text-tertiary-500">Contact Us</h2>
+      <ul class="list-disc list-inside font-semibold">
+        <li><a href="mailto:tacomahonk@gmail.com">tacomahonk@gmail.com</a></li>
+        <li><a href="https://www.instagram.com/tacomahonk">www.instagram.com/tacomahonk</a></li>
+        <li><a href="https://www.facebook.com/tacomahonk">www.facebook.com/tacomahonk</a></li>
+      </ul>
+    </ContentContainer>
+  </div>
+</BaseLayout>
+
+<style>
+  .text-stroke-3 {
+    -webkit-text-stroke: 3px black;
+  }
+
+  .text-stroke-1 {
+    -webkit-text-stroke: 1px black;
+  }
+</style>

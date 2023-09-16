@@ -1,0 +1,28 @@
+---
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+import Head from "@components/Head.astro";
+
+import "@styles/global.css";
+
+const { title } = Astro.props;
+---
+
+<html lang="en" class="h-full scroll-smooth bg-base-400 antialiased">
+  <head>
+    <Head title={title}>
+      <slot name="head" />
+    </Head>
+  </head>
+  <body class="flex h-full flex-col">
+    <header class="py-10">
+      <Header />
+    </header>
+    <main class="max-w-screen-xl mx-auto w-full">
+      <slot />
+    </main>
+    <footer class="mt-auto w-full">
+      <Footer />
+    </footer>
+  </body>
+</html>
