@@ -12,7 +12,7 @@ module.exports = {
 			current: 'currentColor',
 			black: colors.black,
 			white: colors.white,
-			gray: colors.trueGray,
+			gray: colors.neutral,
 			'base-50': 'rgb(var(--color-base-50) / <alpha-value>)',
 			'base-100': 'rgb(var(--color-base-100) / <alpha-value>)',
 			'base-200': 'rgb(var(--color-base-200) / <alpha-value>)',
