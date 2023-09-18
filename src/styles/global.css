@@ -32,7 +32,7 @@
 }
 
 .content-clamp > p:first-of-type {
-  @apply line-clamp-6 sm:line-clamp-none;
+  /* @apply line-clamp-6 sm:line-clamp-none; */
 }
 .content-clamp > p:not(:first-of-type) {
   @apply hidden sm:block;
