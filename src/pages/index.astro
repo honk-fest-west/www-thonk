@@ -41,19 +41,45 @@ import honkPhoto894 from '@images/photos/2023-06-04-HONK-894.jpg'
         </h2>
       </div>
     </div>
+
+    <ContentContainer>
+      <ContentTitle>Volunteer</ContentTitle>
+      <p class="mb-6">
+        Fill out this
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdViYO7T8YXCqQOfzHPJcb2ap432dLPZvXu12lTYKTi9egvqQ/viewform?usp=sf_link"
+          >google form</a
+        >
+         to let us know you are interested in volunteering!
+      </p>
+      <p class="mb-6 block text-ellipsis overflow-hidden">
+        Questions? Email <a
+          class="text-lg sm:text-2xl"
+          href="mailto:TacomaHONK+volunteer@gmail.com"
+          >TacomaHONK+volunteer@gmail.com</a
+        >
+      </p>
+    </ContentContainer>
+
     <ContentContainer>
       <ContentTitle>Tacoma HONK! Fest</ContentTitle>
-      <MoreContainer client:visible >
-        <p class="mb-6">
+      <MoreContainer client:visible>
+        <p>
           Get spooky at Tacoma’s first annual HONK! Fest on Oct 21st, 2023 in the
           McKinley Hill neighborhood. Put on your favorite costume (Galloping
           Gertie anyone?) and bring a funky noisemaker. Meet your neighbors, local
           musicians, maybe even join a band!
         </p>
-        <p class="mb-6">
+        <p>
           Tacoma HONK! Fest is an accessible community music festival driven by
-          the energetic performances of street bands in public spaces. And it’s
+          the energetic performances of PNW street bands and cultural groups in public spaces. And it’s
           free of charge!
+        </p>
+        <p>
+          Instead of formal stages, bands will be moving and marching and dancing around. The audience is always welcome to join in!
+        </p>
+        <p>
+          We encourage you to walk, bike, or take public transit to the festival. Feel free to walk (or dance) between the two stage areas set up in the McKinley Hill business district.
         </p>
         <PhotoLinkContainer>
           <PhotoLink 
@@ -80,92 +106,57 @@ import honkPhoto894 from '@images/photos/2023-06-04-HONK-894.jpg'
             alt="Sticks & Bones - H!FW Sun 2023 - @espressobuzz" />
           <a slot="artist-link" href="https://www.espressobuzz.net/">espressobuzz</a>
         </PhotoLinkContainer>
-        <p class="mb-6">
-          Tacoma HONK! Fest will feature performances by HONK! bands from the PNW
-          and local cultural groups at two locations throughout the day. Instead
-          of formal stages, bands will be moving and marching and dancing around.
-          The audience is always welcome to join in!
-        </p>
-        <div class="flex flex-wrap lg:flex-nowrap">
-          <div
-            class="w-full lg:w-fit flex-none mb-6 flex justify-center items-center"
-          >
-            <Image class="w-fit" src={snail} alt="Shelby on the snaildrum" />
-          </div>
-          <div class="flex-1">
-            <p class="mb-6 ">
-              On snaildrum, we have Shelby, our festival’s slimy mascot. Inspired
-              by the moon snail, Shelby represents curiosity, delight, and that
-              sweet dash of peculiarity that comes with any HONK! Festival.
-            </p>
-            <p class="mb-6 ">
-              We encourage you to walk, bike, or take public transit to the
-              festival. Feel free to walk (or dance) between the two stage areas
-              set up in the McKinley Hill business district.
-            </p>
-          </div>
-        </div>
       </MoreContainer>
     </ContentContainer>
 
     <ContentContainer>
       <ContentTitle>Wanna HONK! with us?</ContentTitle>
-      <MoreContainer client:visible>
-        <p class="mb-6 ">
-          Dust off your middle school clarinet, your undergrad English Horn, or
-          find that shoebox with that 3rd grade recorder, and jump in on the
-          public jam session (details coming). We welcome anyone interested,
-          regardless of age or experience.
-        </p>
-        <p class="mb-6 ">
-          Younger attendees are invited to visit the Moore Library on
-          <a
-            href="https://tacoma.bibliocommons.com/events/64c9552e591918360005fb3d"
-          >
-            October 7th
-          </a>
-          to create instruments from recycled objects that they can bring to
-          Tacoma HONK! fest to join in the music-making.
-        </p>
-        <p class="mb-6 ">
-          Can’t find that instrument? All are welcome to sing, dance, and drum
-          along. Let’s celebrate together with everyone in our community
-          regardless of age, race, gender identity, cultural background, ethnic
-          and indigenous identity, native language, immigration status, ability,
-          religion, education, socioeconomic status, or sexual orientation.
-        </p>
-      </MoreContainer>
+      <p>
+        Dust off your middle school clarinet, your undergrad English Horn, or
+        find that shoebox with that 3rd grade recorder, and jump in on the
+        public jam session (details coming). We welcome anyone interested,
+        regardless of age or experience.
+      </p>
+      <p>
+        Younger attendees are invited to visit the Moore Library on
+        <a
+          href="https://tacoma.bibliocommons.com/events/64c9552e591918360005fb3d"
+        >
+          October 7th
+        </a>
+        to create instruments from recycled objects that they can bring to
+        Tacoma HONK! fest to join in the music-making.
+      </p>
     </ContentContainer>
 
     <ContentContainer>
       <ContentTitle>How the heck did Tacoma get its own HONK!?</ContentTitle>
-      <MoreContainer client:visible>
-        <p class="mb-6">
-          Tacoma HONK! is hosted by Tacomarama Community Street Band, sponsored by
-          HONK! Festival West, and made possible with funding from Tacoma Venues
-          and Events.
-        </p>
-        <div class="flex gap-x-4 xl:gap-x-6 justify-center items-center flex-none mb-6">
-          <a href="https://www.tacomavenues.org/" class="block bg-white border-black border-4 p-2 rounded-xl hover:scale-105 hover:border-base-700">
-            <Image src={tveLogo} alt="TACOMA Venues & Events" class="h-14 sm:h-16 w-fit"/>
-          </a>
-          <a href="https://honkfestwest.org" class="block border-black border-4 p-2 rounded-xl bg-base-400 hover:scale-105 hover:border-base-700">
-            <Image src={hfwLogo} alt="HONK! Fest West" class="h-14 sm:h-16 w-fit"/>
-          </a>
-        </div>
-        <p class="mb-6 ">
-          Tacomarama, Tacoma HONK! Fest’s host band, performed at the last two
-          HONK! Fest West festivals in Seattle and wanted to bring it all to
-          Tacoma. They’re ecstatic to host (and play at) Tacoma’s very own HONK!
-          Festival.
-        </p>
-      </MoreContainer>
+      <p>
+        Tacoma HONK! is hosted by Tacomarama Community Street Band, sponsored by
+        HONK! Festival West, and made possible with funding from Tacoma Venues
+        and Events.
+      </p>
+      <div class="flex gap-x-4 xl:gap-x-6 justify-center items-center flex-none">
+        <a href="https://www.tacomavenues.org/" class="block bg-white border-black border-4 p-2 rounded-xl hover:scale-105 hover:border-base-700">
+          <Image src={tveLogo} alt="TACOMA Venues & Events" class="h-14 sm:h-16 w-fit"/>
+        </a>
+        <a href="https://honkfestwest.org" class="block border-black border-4 p-2 rounded-xl bg-base-400 hover:scale-105 hover:border-base-700">
+          <Image src={hfwLogo} alt="HONK! Fest West" class="h-14 sm:h-16 w-fit"/>
+        </a>
+      </div>
+    </ContentContainer>
+
+    <ContentContainer>
+      <ContentTitle>Why McKinley Hill?</ContentTitle>
+      <p>
+        Not only is McKinley Hill one of the oldest neighborhoods in Tacoma and has some of the coolest views of the Dome, but it's also home to fun and eclectic businesses and a vibrant, active, and engaged community.  It’s a Tacoma gem that Tacoma HONK! is excited to show off.
+      </p>
     </ContentContainer>
 
     <ContentContainer>
       <ContentTitle>Meet our host band TACOMARAMA!</ContentTitle>
       <MoreContainer client:visible>
-        <p class="mb-6 ">
+        <p>
           Tacomarama Community Street Band is a music ensemble that regularly
           performs at Tacoma-based events, including Tacoma Light Trail Parade,
           Tacoma Dragon Parades, Tacoma Porchfest, Ocean Fest, Parking Day, and
@@ -175,36 +166,6 @@ import honkPhoto894 from '@images/photos/2023-06-04-HONK-894.jpg'
           <a href="https://tacomarama.org">tacomarama.org</a>
         </p>
       </MoreContainer>
-    </ContentContainer>
-
-    <ContentContainer>
-      <ContentTitle>Volunteer</ContentTitle>
-      <p class="mb-6 ">
-        Thank you for your interest in being a volunteer for Tacoma HONK! Fest!
-      </p>
-      <p class="mb-6 hidden sm:block ">
-        We need volunteers to help out on the day of the event! Tasks can
-        include selling merchandise, answering questions at the information
-        booth, managing a stage, sitting outside the green room to ensure the
-        security of instruments, facilitating kids activity area, walking
-        through the crowd collecting donations, as well as festival set up and
-        breakdown
-      </p>
-      <p class="mb-6">
-        Fill out this
-        <a
-          href="https://docs.google.com/forms/d/e/1FAIpQLSdViYO7T8YXCqQOfzHPJcb2ap432dLPZvXu12lTYKTi9egvqQ/viewform?usp=sf_link"
-          >google form</a
-        >
-         to let us know you are interested in volunteering!
-      </p>
-      <p class="mb-6 block text-ellipsis overflow-hidden">
-        Questions? Email <a
-          class="text-lg sm:text-2xl"
-          href="mailto:TacomaHONK+volunteer@gmail.com"
-          >TacomaHONK+volunteer@gmail.com</a
-        >
-      </p>
     </ContentContainer>
 
     <ContentContainer>
