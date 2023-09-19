@@ -10,12 +10,12 @@
     font-family: 'Poppins', 'sans-serif';
   }
   a {
-    color: rgb(var(--color-primary-400));
+    color: rgb(var(--color-base-700));
     text-decoration: underline;
-    -webkit-text-stroke: 2px black;
+    -webkit-text-stroke: 1px rgb(var(--color-base-900));
   }
   a:hover {
-    color: rgb(var(--color-primary-500));
+    color: rgb(var(--color-base-600));
   }
 }
 
