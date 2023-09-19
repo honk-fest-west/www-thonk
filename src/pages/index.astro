@@ -5,43 +5,25 @@ import ContentContainer from "@components/ContentContainer.astro";
 import MoreContainer from "@components/MoreContainer.svelte";
 import ContentTitle from "@components/ContentTitle.astro";
 import PhotoLinkContainer from "@components/PhotoLinkContainer.astro";
+import SplashImage from "@components/SplashImage.astro";
 import PhotoLink from "@components/PhotoLink.astro";
 import snail from "@images/snail.png";
 import tveLogo from '@images/supporters/tve.jpg';
 import hfwLogo from '@images/supporters/hfw.png';
+import homeSplash from '@images/home-splash.png'
 
 import honkPhoto059 from '@images/photos/2023-06-01-HONK-059.jpg'
 import honkPhoto522 from '@images/photos/2023-06-02-HONK-522.jpg'
 import honkPhoto388 from '@images/photos/2023-06-03-HONK-388.jpg'
 import honkPhoto030 from '@images/photos/2023-06-04-HONK-030.jpg'
 import honkPhoto894 from '@images/photos/2023-06-04-HONK-894.jpg'
+
+
 ---
 
 <BaseLayout>
   <div class="flex flex-col gap-4 sm:gap-8">
-    <div
-      class="mx-6 2xl:mx-0 grid grid-cols-2 border-sketch-3 overflow-clip bg-primary-400 text-3xl sm:text-5xl lg:text-7xl items-center"
-    >
-      <div class="bg-tertiary-400">
-        <h2
-          class="block font-title text-center text-stroke-3 font-bold text-primary-400 py-4 border-0 border-r-4 lg:border-r-8 border-black"
-        >
-          OCTOBER 21
-          <br />
-           1-5 PM
-        </h2>
-      </div>
-      <div class="bg-color-4-400">
-        <h2
-          class="block font-title text-center text-stroke-3 font-bold text-secondary-300 py-4"
-        >
-          McKinley
-          <br />
-           HILL
-        </h2>
-      </div>
-    </div>
-
+    <SplashImage img={homeSplash}/>
     <ContentContainer>
       <ContentTitle>Volunteer</ContentTitle>
       <p>
