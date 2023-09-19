@@ -14,15 +14,21 @@ const { title } = Astro.props;
       <slot name="head" />
     </Head>
   </head>
-  <body class="flex h-full flex-col">
-    <header>
-      <Header />
+  <body class="pb-2">
+    <header class="mb-4 border-base2-400 border-t-[2rem] max-w-screen-xl w-full z-10 mx-auto top-0 sticky bg-gradient-to-b from-base2-400 to-transparent">
+      <div class="mx-6 2xl:mx-0 shadow-lg">
+        <Header />
+      </div>
     </header>
     <main class="max-w-screen-xl mx-auto w-full">
-      <slot />
+      <div class="mx-6 2xl:mx-0">
+        <slot />
+      </div>
     </main>
-    <footer class="mt-auto w-full">
-      <Footer />
+    <footer class="max-w-screen-xl mt-auto mx-auto w-full">
+      <div class=" 2xl:mx-0 my-12">
+        <Footer />
+      </div>
     </footer>
   </body>
 </html>

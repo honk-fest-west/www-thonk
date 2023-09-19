@@ -1,7 +1,26 @@
 ---
-import { Image } from "astro:assets";
-import tacomaHonk from "@images/TacomaHonk.png";
+const navLinks = [
+  { display: 'Volunteer', href: '#volunteer' },
+  { display: 'Festival', href: '#festival' },
+  { display: 'Wanna HONK!?', href: '#wanna' },
+  { display: 'How?', href: '#how' },
+  { display: 'Why?', href: '#why' },
+  { display: 'Tacomarama!', href: '#tacomarama'},
+  { display: 'Contact', href: '#contact' }
+]
 ---
-
-<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 my-5 sm:my-10">
-</div>
+<nav class="px-6 py-4 border-sketch-1 bg-primary-400 w-full">
+  <ul class="justify-between flex-wrap gap-2 hidden lg:flex">
+    { navLinks.map((link) => {
+      return (
+        <li>
+          <a 
+            class="px-2 py-2 font-bold text-xl xl:text-2xl block border-4 font-title border-black rounded-xl bg-tertiary-400 text-primary-400 tracking-wider text-stroke-3 sm:text-stroke-2 shadow-lg focus:scale-95 focus:shadow-none hover:bg-tertiary-300 transition-all duration-100 ease-in-out" 
+            href={link.href}>
+              {link.display}
+            </a>
+        </li>
+      )
+    }) }
+  </ul>
+</nav>

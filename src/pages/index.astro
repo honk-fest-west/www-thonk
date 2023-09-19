@@ -5,7 +5,7 @@ import ContentContainer from "@components/ContentContainer.astro";
 import MoreContainer from "@components/MoreContainer.svelte";
 import ContentTitle from "@components/ContentTitle.astro";
 import PhotoLinkContainer from "@components/PhotoLinkContainer.astro";
-import SplashImage from "@components/SplashImage.astro";
+import Picture from "@components/Picture.astro";
 import PhotoLink from "@components/PhotoLink.astro";
 import snail from "@images/snail.png";
 import tveLogo from '@images/supporters/tve.jpg';
@@ -22,9 +22,11 @@ import honkPhoto894 from '@images/photos/2023-06-04-HONK-894.jpg'
 ---
 
 <BaseLayout>
+  <div class="w-10/12 mx-auto mb-4">
+    <Picture img={homeSplash} alt="Tacoma HONK! | 1-5PM | October 21 | McKinley Hill"/>
+  </div>
   <div class="flex flex-col gap-4 sm:gap-8">
-    <SplashImage img={homeSplash}/>
-    <ContentContainer>
+    <ContentContainer id="volunteer">
       <ContentTitle>Volunteer</ContentTitle>
       <p>
         Fill out this
@@ -43,7 +45,7 @@ import honkPhoto894 from '@images/photos/2023-06-04-HONK-894.jpg'
       </p>
     </ContentContainer>
 
-    <ContentContainer>
+    <ContentContainer id="festival">
       <ContentTitle>Tacoma HONK! Fest</ContentTitle>
       <MoreContainer client:visible>
         <p>
@@ -91,7 +93,7 @@ import honkPhoto894 from '@images/photos/2023-06-04-HONK-894.jpg'
       </MoreContainer>
     </ContentContainer>
 
-    <ContentContainer>
+    <ContentContainer id="wanna">
       <ContentTitle>Wanna HONK! with us?</ContentTitle>
       <MoreContainer client:visible>
         <p>
@@ -113,7 +115,7 @@ import honkPhoto894 from '@images/photos/2023-06-04-HONK-894.jpg'
       </MoreContainer>
     </ContentContainer>
 
-    <ContentContainer>
+    <ContentContainer id="how">
       <ContentTitle>How the heck did Tacoma get its own HONK!?</ContentTitle>
       <p>
         Tacoma HONK! is hosted by Tacomarama Community Street Band, sponsored by
@@ -130,14 +132,14 @@ import honkPhoto894 from '@images/photos/2023-06-04-HONK-894.jpg'
       </div>
     </ContentContainer>
 
-    <ContentContainer>
+    <ContentContainer id="why">
       <ContentTitle>Why McKinley Hill?</ContentTitle>
       <p>
         Not only is McKinley Hill one of the oldest neighborhoods in Tacoma and has some of the coolest views of the Dome, but it's also home to fun and eclectic businesses and a vibrant, active, and engaged community.  It’s a Tacoma gem that Tacoma HONK! is excited to show off.
       </p>
     </ContentContainer>
 
-    <ContentContainer>
+    <ContentContainer id="tacomarama">
       <ContentTitle>Meet our host band TACOMARAMA!</ContentTitle>
       <MoreContainer client:visible>
         <p>
@@ -152,7 +154,7 @@ import honkPhoto894 from '@images/photos/2023-06-04-HONK-894.jpg'
       </MoreContainer>
     </ContentContainer>
 
-    <ContentContainer>
+    <ContentContainer id="contact">
       <ContentTitle>Contact Us</ContentTitle>
       <ul class="text-center list-inside font-bold text-lg sm:text-2xl">
         <li class="truncate mb-3">

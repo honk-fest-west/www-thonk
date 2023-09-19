@@ -1,11 +1,11 @@
 ---
-const { className = "" } = Astro.props;
+const { id, className = "" } = Astro.props;
 ---
 
-<section
-  class=`border-sketch-${Math.round(Math.random() * 6)} mx-6 2xl:mx-0 bg-secondary-300 font-semibold px-8 md:px-24 py-7 md:py-12 text-2xl ${className}`
->
+<section {id} class="-mt-36 pt-36">
+<div class=`content-container border-sketch-${Math.round(Math.random() * 6)} bg-secondary-300 font-semibold px-8 md:px-24 py-6 md:py-8 text-lg ${className}`>
   <div class="flex flex-col gap-3 sm:gap-6">
     <slot />
   </div>
-</section>
+</div>
+<section>
