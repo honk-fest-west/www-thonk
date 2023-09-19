@@ -1,20 +1,22 @@
+@import 'colors.css';
+@import 'fonts.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'Berlin Sans FB';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Berlin Sans FB'), url('/fonts/BRLNSR.woff') format('woff');
-}
-
-
-@font-face {
-  font-family: 'Berlin Sans FB Bold';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Berlin Sans FB Bold'), url('/fonts/BRLNSB.woff') format('woff');
+@layer base {
+  html {
+    font-family: 'Poppins', 'sans-serif';
+  }
+  a {
+    color: rgb(var(--color-primary-400));
+    text-decoration: underline;
+    -webkit-text-stroke: 1px black;
+  }
+  a:hover {
+    color: rgb(var(--color-primary-500));
+  }
 }
 
 @layer components {
@@ -29,54 +31,54 @@
   }
 }
 
-
-/* https://uicolors.app/create */
-:root {
-  --color-base-50: 237 255 253;
-  --color-base-100: 192 255 251;
-  --color-base-200: 129 255 248;
-  --color-base-300: 58 255 246;
-  --color-base-400: 0 255 234;
-  --color-base-500: 0 226 209;
-  --color-base-600: 0 183 173;
-  --color-base-700: 0 145 138;
-  --color-base-800: 0 114 111;
-  --color-base-900: 4 93 91;
-  --color-base-950: 0 56 58;
-
-  --color-primary-50: 253 244 255;
-  --color-primary-100: 251 233 254;
-  --color-primary-200: 246 210 252;
-  --color-primary-300: 241 174 249;
-  --color-primary-400: 231 109 243;
-  --color-primary-500: 219 76 233;
-  --color-primary-600: 194 44 205;
-  --color-primary-700: 164 33 170;
-  --color-primary-800: 135 29 139;
-  --color-primary-900: 113 29 114;
-  --color-primary-950: 75 7 75;
-
-  --color-secondary-50: 255 248 235;
-  --color-secondary-100: 255 236 198;
-  --color-secondary-200: 255 215 136;
-  --color-secondary-300: 255 194 89;
-  --color-secondary-400: 255 163 32;
-  --color-secondary-500: 249 127 7;
-  --color-secondary-600: 221 90 2;
-  --color-secondary-700: 183 59 6;
-  --color-secondary-800: 148 45 12;
-  --color-secondary-900: 122 38 13;
-  --color-secondary-950: 70 17 2;
-
-  --color-tertiary-50: 255 241 241;
-  --color-tertiary-100: 255 225 225;
-  --color-tertiary-200: 255 199 199;
-  --color-tertiary-300: 255 160 160;
-  --color-tertiary-400: 255 120 120;
-  --color-tertiary-500: 248 59 59;
-  --color-tertiary-600: 229 29 29;
-  --color-tertiary-700: 193 20 20;
-  --color-tertiary-800: 160 20 20;
-  --color-tertiary-900: 132 24 24;
-  --color-tertiary-950: 72 7 7;
+.border-sketch-0 {
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  border-bottom-right-radius: 15px 255px;
+  border-bottom-left-radius:15px 255px;
 }
+
+.border-sketch-1 {
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  border-bottom-right-radius: 225px 15px;
+  border-bottom-left-radius:15px 255px;
+}
+
+.border-sketch-2 {
+  border-top-left-radius: 15px 255px; 
+  border-top-right-radius: 255px 15px;
+  border-bottom-right-radius: 15px 255px;
+  border-bottom-left-radius:255px 15px;
+}
+
+.border-sketch-3 {
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 255px 15px;
+  border-bottom-right-radius: 15px 255px;
+  border-bottom-left-radius:15px 255px;    
+}
+
+.border-sketch-4 {
+  border-top-left-radius:  15px 255px;
+  border-top-right-radius: 15px 255px;
+  border-bottom-right-radius: 255px 15px; 
+  border-bottom-left-radius: 255px 15px;
+}
+.border-sketch-5 {
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 255px;
+  border-bottom-right-radius: 15px 255px;
+  border-bottom-left-radius:255px 15px;
+}
+
+.border-sketch-6 {
+  border-top-left-radius: 15px 255px;
+  border-top-right-radius: 255px 15px;
+  border-bottom-right-radius: 255px 15px; 
+  border-bottom-left-radius:15px 255px;
+}
+
+
+
+

@@ -25,6 +25,18 @@ module.exports = {
 			'base-900': 'rgb(var(--color-base-900) / <alpha-value>)',
 			'base-950': 'rgb(var(--color-base-950) / <alpha-value>)',
 
+			'base2-50': 'rgb(var(--color-base2-50) / <alpha-value>)',
+			'base2-100': 'rgb(var(--color-base2-100) / <alpha-value>)',
+			'base2-200': 'rgb(var(--color-base2-200) / <alpha-value>)',
+			'base2-300': 'rgb(var(--color-base2-300) / <alpha-value>)',
+			'base2-400': 'rgb(var(--color-base2-400) / <alpha-value>)',
+			'base2-500': 'rgb(var(--color-base2-500) / <alpha-value>)',
+			'base2-600': 'rgb(var(--color-base2-600) / <alpha-value>)',
+			'base2-700': 'rgb(var(--color-base2-700) / <alpha-value>)',
+			'base2-800': 'rgb(var(--color-base2-800) / <alpha-value>)',
+			'base2-900': 'rgb(var(--color-base2-900) / <alpha-value>)',
+			'base2-950': 'rgb(var(--color-base2-950) / <alpha-value>)',
+
 			'primary-50': 'rgb(var(--color-primary-50) / <alpha-value>)',
 			'primary-100': 'rgb(var(--color-primary-100) / <alpha-value>)',
 			'primary-200': 'rgb(var(--color-primary-200) / <alpha-value>)',
@@ -59,7 +71,19 @@ module.exports = {
 			'tertiary-700': 'rgb(var(--color-tertiary-700) / <alpha-value>)',
 			'tertiary-800': 'rgb(var(--color-tertiary-800) / <alpha-value>)',
 			'tertiary-900': 'rgb(var(--color-tertiary-900) / <alpha-value>)',
-			'tertiary-950': 'rgb(var(--color-tertiary-950) / <alpha-value>)'
+			'tertiary-950': 'rgb(var(--color-tertiary-950) / <alpha-value>)',
+
+			'color4-50': 'rgb(var(--color-color4-50) / <alpha-value>)',
+			'color4-100': 'rgb(var(--color-color4-100) / <alpha-value>)',
+			'color4-200': 'rgb(var(--color-color4-200) / <alpha-value>)',
+			'color4-300': 'rgb(var(--color-color4-300) / <alpha-value>)',
+			'color4-400': 'rgb(var(--color-color4-400) / <alpha-value>)',
+			'color4-500': 'rgb(var(--color-color4-500) / <alpha-value>)',
+			'color4-600': 'rgb(var(--color-color4-600) / <alpha-value>)',
+			'color4-700': 'rgb(var(--color-color4-700) / <alpha-value>)',
+			'color4-800': 'rgb(var(--color-color4-800) / <alpha-value>)',
+			'color4-900': 'rgb(var(--color-color4-900) / <alpha-value>)',
+			'color4-950': 'rgb(var(--color-color4-950) / <alpha-value>)'
 		}
 	},
 	plugins: [],

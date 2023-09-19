@@ -2,19 +2,35 @@
 import { Image } from "astro:assets";
 import BaseLayout from "@layouts/BaseLayout.astro";
 import ContentContainer from "@components/ContentContainer.astro";
+import ContentTitle from "@components/ContentTitle.astro";
 import snail from "@images/snail.png";
 ---
 
 <BaseLayout>
   <div class="flex flex-col gap-8">
-    <div class="w-full px-10 flex flex-col justify-center items-center">
-      <h2
-        class="font-title text-center text-stroke-3 text-7xl font-bold text-primary-400 mb-6"
+    <div class="mx-auto grid grid-cols-2 border-sketch-3 border-4 border-black overflow-clip">
+      <div class="bg-secondary-300 h-full">
+        <h2
+        class="block font-title text-center text-stroke-3 text-7xl font-bold text-primary-400 p-4 border-0 border-r-4 border-black"
       >
-        Oct 21st, 2023
+        OCTOBER 21
+        <br/>
+        1-5 PM
       </h2>
+      </div>
+      <div class="bg-color-4-400 h-full">
+        <h2 class="block font-title text-center text-stroke-3 text-7xl font-bold text-secondary-300 bg-primary-400 p-4">
+          McKinley
+          <br/>
+          HILL
+        </h2>
+
+      </div>
     </div>
     <ContentContainer>
+      <ContentTitle>
+        Tacoma HONK! Fest
+      </ContentTitle>
       <p class="mb-6">
         Get spooky at Tacoma’s first annual HONK! Fest on Oct 21st, 2023 in the
         <span class="font-semibold">McKinley Hill</span> neighborhood. Put on
@@ -53,17 +69,73 @@ import snail from "@images/snail.png";
         </div>
       </div>
     </ContentContainer>
-    <div class="w-full px-12 py-12 flex justify-center items-center">
-      <h2
-        class="text-center font-title text-stroke-3 text-7xl font-bold text-primary-400"
-      >
-        More info soon!
-      </h2>
-    </div>
+
     <ContentContainer>
-      <h2 class="font-title text-stroke-1 text-3xl font-bold text-tertiary-500">
+      <ContentTitle>
+        Wanna HONK! with us?
+      </ContentTitle>
+      <p class="mb-6">
+        Dust off your middle school clarinet, your undergrad English Horn, or find that shoebox with that 3rd grade recorder, and jump in on the public jam session (details coming). We welcome anyone interested, regardless of age or experience.
+      </p>
+      <p class="mb-6">
+        Younger attendees are invited to visit the Moore Library on 
+        <a href="https://tacoma.bibliocommons.com/events/64c9552e591918360005fb3d">
+          October 7th 
+        </a>
+        to create instruments from recycled objects that they can bring to Tacoma 
+        HONK! fest to join in the music-making.
+      </p>
+      <p >
+        Can’t find that instrument? All are welcome to sing, dance, and drum along. Let’s celebrate together with everyone in our community regardless of age, race, gender identity, cultural background, ethnic and indigenous identity, native language, immigration status, ability, religion, education, socioeconomic status, or sexual orientation.
+      </p>
+    </ContentContainer>
+
+    <ContentContainer>
+      <ContentTitle>
+        How the heck did Tacoma get its own HONK!?
+      </ContentTitle>
+      <p class="mb-6">
+        Tacoma HONK! is hosted by Tacomarama Community Street Band, sponsored by HONK! Festival West, and made possible with funding from Tacoma Venues and Events.
+      </p>
+      <p >
+        Tacomarama, Tacoma HONK! Fest’s host band, performed at the last two HONK! Fest West festivals in Seattle and wanted to bring it all to Tacoma. They’re ecstatic to host (and play at) Tacoma’s very own HONK! Festival.
+      </p>
+    </ContentContainer>
+
+    <ContentContainer>
+      <ContentTitle>
+        Meet our host band TACOMARAMA!
+      </ContentTitle>
+      <p>
+        Tacomarama Community Street Band is a music ensemble that regularly performs at Tacoma-based events, including Tacoma Light Trail Parade, Tacoma Dragon Parades, Tacoma Porchfest, Ocean Fest, Parking Day, and numerous neighborhood celebrations. They’re proud of being all ages and all inclusive, so much so that if you get close enough, a stray trombone may hook your Rainiers hoodie and yank you into the band forever.
+        <a href="https://tacomarama.org">tacomarama.org</a>
+      </p>
+    </ContentContainer>
+
+    <ContentContainer>
+      <ContentTitle>
+        Volunteer
+      </ContentTitle>
+      <p class="mb-6">
+        Thank you for your interest in being a volunteer for Tacoma HONK! Fest!
+      </p>
+      <p class="mb-6">
+        We need volunteers to help out on the day of the event! Tasks can include selling merchandise, answering questions at the information booth, managing a stage, sitting outside the green room to ensure the security of instruments, facilitating kids activity area, walking through the crowd collecting donations, as well as festival set up and breakdown
+      </p>
+      <p class="mb-6">
+        Fill out this 
+        <a href="">google form</a> 
+        to let us know you are interested in volunteering! 
+      </p>
+      <p>
+        Questions? Email <a href="mailto:TacomaHONK+volunteer@gmail.com">TacomaHONK+volunteer@gmail.com</a>
+      </p>
+    </ContentContainer>
+
+    <ContentContainer>
+      <ContentTitle>
         Contact Us
-      </h2>
+      </ContentTitle>
       <ul class="list-disc list-inside font-semibold">
         <li>
           <a

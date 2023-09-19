@@ -3,7 +3,8 @@ const { className = "" } = Astro.props;
 ---
 
 <section
-  class=`mx-6 xl:mx-0 border-4 lg:border-8 border-black rounded-xl bg-secondary-200 px-6 py-4 text-2xl ${className}`
+  class=`border-sketch-${Math.round(Math.random() * 6)} mx-6 xl:mx-0 border-4 lg:border-8 border-black rounded-xl bg-secondary-200 font-semibold px-8 py-7 text-2xl ${className}`
 >
   <slot />
 </section>
+

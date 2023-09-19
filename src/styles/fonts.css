@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Alatsi&family=Poppins:wght@400;600&display=swap');
+
+@font-face {
+  font-family: 'Berlin Sans FB';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Berlin Sans FB'), url('/fonts/BRLNSR.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Berlin Sans FB Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Berlin Sans FB Bold'), url('/fonts/BRLNSB.woff') format('woff');
+}
