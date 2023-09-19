@@ -36,6 +36,7 @@
   border-top-right-radius: 15px 225px;
   border-bottom-right-radius: 15px 255px;
   border-bottom-left-radius:15px 255px;
+  @apply border-4 lg:border-8 border-black;
 }
 
 .border-sketch-1 {
@@ -43,6 +44,7 @@
   border-top-right-radius: 15px 225px;
   border-bottom-right-radius: 225px 15px;
   border-bottom-left-radius:15px 255px;
+  @apply border-4 lg:border-8 border-black;
 }
 
 .border-sketch-2 {
@@ -50,13 +52,15 @@
   border-top-right-radius: 255px 15px;
   border-bottom-right-radius: 15px 255px;
   border-bottom-left-radius:255px 15px;
+  @apply border-4 lg:border-8 border-black;
 }
 
 .border-sketch-3 {
   border-top-left-radius: 255px 15px;
   border-top-right-radius: 255px 15px;
   border-bottom-right-radius: 15px 255px;
-  border-bottom-left-radius:15px 255px;    
+  border-bottom-left-radius:15px 255px;
+  @apply border-4 lg:border-8 border-black; 
 }
 
 .border-sketch-4 {
@@ -64,12 +68,14 @@
   border-top-right-radius: 15px 255px;
   border-bottom-right-radius: 255px 15px; 
   border-bottom-left-radius: 255px 15px;
+  @apply border-4 lg:border-8 border-black;
 }
 .border-sketch-5 {
   border-top-left-radius: 255px 15px;
   border-top-right-radius: 15px 255px;
   border-bottom-right-radius: 15px 255px;
   border-bottom-left-radius:255px 15px;
+  @apply border-4 lg:border-8 border-black;
 }
 
 .border-sketch-6 {
@@ -77,6 +83,7 @@
   border-top-right-radius: 255px 15px;
   border-bottom-right-radius: 255px 15px; 
   border-bottom-left-radius:15px 255px;
+  @apply border-4 lg:border-8 border-black;
 }
 
 
