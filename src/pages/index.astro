@@ -27,13 +27,13 @@ import snail from "@images/snail.png";
 
       </div>
     </div>
-    <ContentContainer>
+    <ContentContainer className="content-clamp">
       <ContentTitle>
         Tacoma HONK! Fest
       </ContentTitle>
       <p class="mb-6">
         Get spooky at Tacoma’s first annual HONK! Fest on Oct 21st, 2023 in the
-        <span class="font-semibold">McKinley Hill</span> neighborhood. Put on
+        McKinley Hill neighborhood. Put on
         your favorite costume (Galloping Gertie anyone?) and bring a funky
         noisemaker. Meet your neighbors, local musicians, maybe even join a
         band!
@@ -55,7 +55,7 @@ import snail from "@images/snail.png";
         >
           <Image class="w-fit" src={snail} alt="Shelby on the snaildrum" />
         </div>
-        <div class="flex-1">
+        <div class="flex-1 hidden sm:block">
           <p class="mb-6">
             On snaildrum, we have Shelby, our festival’s slimy mascot. Inspired
             by the moon snail, Shelby represents curiosity, delight, and that
@@ -70,7 +70,7 @@ import snail from "@images/snail.png";
       </div>
     </ContentContainer>
 
-    <ContentContainer>
+    <ContentContainer className="content-clamp">
       <ContentTitle>
         Wanna HONK! with us?
       </ContentTitle>
@@ -90,7 +90,7 @@ import snail from "@images/snail.png";
       </p>
     </ContentContainer>
 
-    <ContentContainer>
+    <ContentContainer className="content-clamp">
       <ContentTitle>
         How the heck did Tacoma get its own HONK!?
       </ContentTitle>
@@ -102,7 +102,7 @@ import snail from "@images/snail.png";
       </p>
     </ContentContainer>
 
-    <ContentContainer>
+    <ContentContainer className="content-clamp">
       <ContentTitle>
         Meet our host band TACOMARAMA!
       </ContentTitle>
@@ -119,7 +119,7 @@ import snail from "@images/snail.png";
       <p class="mb-6">
         Thank you for your interest in being a volunteer for Tacoma HONK! Fest!
       </p>
-      <p class="mb-6">
+      <p class="mb-6 hidden sm:block">
         We need volunteers to help out on the day of the event! Tasks can include selling merchandise, answering questions at the information booth, managing a stage, sitting outside the green room to ensure the security of instruments, facilitating kids activity area, walking through the crowd collecting donations, as well as festival set up and breakdown
       </p>
       <p class="mb-6">
@@ -127,8 +127,8 @@ import snail from "@images/snail.png";
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSdViYO7T8YXCqQOfzHPJcb2ap432dLPZvXu12lTYKTi9egvqQ/viewform?usp=sf_link">google form</a> 
         to let us know you are interested in volunteering! 
       </p>
-      <p>
-        Questions? Email <a href="mailto:TacomaHONK+volunteer@gmail.com">TacomaHONK+volunteer@gmail.com</a>
+      <p class="block text-ellipsis overflow-hidden">
+        Questions? Email <a class="text-lg sm:text-2xl" href="mailto:TacomaHONK+volunteer@gmail.com">TacomaHONK+volunteer@gmail.com</a>
       </p>
     </ContentContainer>
 
@@ -136,19 +136,19 @@ import snail from "@images/snail.png";
       <ContentTitle>
         Contact Us
       </ContentTitle>
-      <ul class="list-disc list-inside font-semibold">
-        <li>
+      <ul class="text-center list-inside font-bold text-lg sm:text-2xl">
+        <li class="truncate">
           <a
             href="mailto:tacomahonk@gmail.com">tacomahonk@gmail.com</a
           >
         </li>
-        <li>
+        <li class="truncate">
           <a
             href="https://www.instagram.com/tacomahonk"
             >www.instagram.com/tacomahonk</a
           >
         </li>
-        <li>
+        <li class="truncate">
           <a
             href="https://www.facebook.com/tacomahonk"
             >www.facebook.com/tacomahonk</a
