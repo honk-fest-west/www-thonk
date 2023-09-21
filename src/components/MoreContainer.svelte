@@ -1,38 +1,28 @@
 <script>
-  let viewing = "less";
+  let viewingMore = false;
 
-  function handleMore() {
-    viewing = "more";
+  function viewMore() {
+   viewingMore = true; 
   }
 
-  function handleLess() {
-    viewing = "less";
-  }
 </script>
 
-{#if viewing === "less"}
-  <div class="relative max-h-[16rem] sm:max-h-full overflow-hidden">
-    <slot />
+<div class="relative sm:max-h-full overflow-hidden"
+  class:max-h-[20rem]={!viewingMore}
+>
+  <slot />
+  {#if !viewingMore}
     <div
-      class="block sm:hidden absolute bottom-0 left-0 right-0 h-[15rem] bg-gradient-to-t from-secondary-300 to-transparent"
+      class="block sm:hidden absolute bottom-0 left-0 right-0 h-[6rem] bg-gradient-to-t from-secondary-300 to-transparent"
     />
-  </div>
-  <div class="block sm:hidden bg-secondary-300 opacity-90">
-    <button
-      on:click={handleMore}
-      class="block underline text-center text-base-700 font-bold mt-4 mx-auto"
-      >More</button
-    >
-  </div>
-{:else if viewing === "more"}
-  <div class="relative">
-    <slot />
-  </div>
-  <div class="block sm:hidden bg-secondary-300 opacity-90">
-    <button
-      on:click={handleLess}
-      class="block underline text-center text-primary-500 font-bold mt-4 mx-auto"
-      >Less</button
-    >
-  </div>
-{/if}
+  {/if}
+</div>
+<div class="block sm:hidden bg-secondary-300 opacity-90">
+  {#if !viewingMore}
+  <button
+    on:click={viewMore}
+    class="block text-center text-base-700 text-stroke-1 font-bold mt-4 mx-auto"
+    >more &blacktriangledown;</button
+  >
+  {/if}
+</div>

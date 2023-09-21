@@ -31,13 +31,6 @@
   }
 }
 
-.content-clamp > p:first-of-type {
-  /* @apply line-clamp-6 sm:line-clamp-none; */
-}
-.content-clamp > p:not(:first-of-type) {
-  @apply hidden sm:block;
-}
-
 .border-sketch-0 {
   border-top-left-radius: 255px 15px;
   border-top-right-radius: 15px 225px;
