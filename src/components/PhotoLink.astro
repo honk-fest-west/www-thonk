@@ -1,0 +1,12 @@
+---
+import { Image } from 'astro:assets'
+
+const { href, src, alt } = Astro.props
+---
+
+<a class="block" href={href}>
+  <Image
+    class="h-20 lg:h-24 xl:h-32 w-fit border-black border-4 rounded-xl hover:scale-105 hover:border-base-700"
+    src={src}
+    alt={alt} />
+</a>

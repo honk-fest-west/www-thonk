@@ -4,6 +4,8 @@ import BaseLayout from "@layouts/BaseLayout.astro";
 import ContentContainer from "@components/ContentContainer.astro";
 import MoreContainer from "@components/MoreContainer.svelte";
 import ContentTitle from "@components/ContentTitle.astro";
+import PhotoLinkContainer from "@components/PhotoLinkContainer.astro";
+import PhotoLink from "@components/PhotoLink.astro";
 import snail from "@images/snail.png";
 import tveLogo from '@images/supporters/tve.jpg';
 import hfwLogo from '@images/supporters/hfw.png';
@@ -53,41 +55,31 @@ import honkPhoto894 from '@images/photos/2023-06-04-HONK-894.jpg'
           the energetic performances of street bands in public spaces. And it’s
           free of charge!
         </p>
-        <div class="flex gap-2 xl:gap-6 items-center justify-between mb-2 flex-wrap sm:flex-nowrap mx-2">
-          <a class="block" href="https://www.espressobuzz.net/Events/2023/HonkFestWest/NeonBrassParty/i-4hfDQMp/A">
-            <Image
-              class="h-20 lg:h-24 xl:h-32 w-fit border-black border-4 rounded-xl hover:scale-105 hover:border-base-700"
-              src={honkPhoto059} 
-              alt="Neon Brass Party - H!FW Thurs 2023 - @espressobuzz" />
-          </a>
-          <a class="block" href="https://www.espressobuzz.net/Events/2023/HonkFestWest/SoulJambalaya/i-hwpMqkw/A">
-            <Image
-              class="h-20 lg:h-24 xl:h-32 w-fit border-black border-4 rounded-xl hover:scale-105 hover:border-base-700"
-              src={honkPhoto522} 
-              alt="Soul Jambalaya - H!FW Fri 2023 - @espressobuzz" />
-          </a>
-          <a class="block" href="https://www.espressobuzz.net/Events/2023/HonkFestWest/BrasslessChaps/i-TvwBs24/A">
-            <Image
-              class="h-20 lg:h-24 xl:h-32 w-fit border-black border-4 rounded-xl hover:scale-105 hover:border-base-700"
-              src={honkPhoto388} 
-              alt="Brassless Chaps - H!FW Sat 2023 - @espressobuzz" />
-          </a>
-          <a class="block" href="https://www.espressobuzz.net/Events/2023/HonkFestWest/ArtesianRumble/i-v8NLp4k/A">
-            <Image
-              class="h-20 lg:h-24 xl:h-32 w-fit border-black border-4 rounded-xl hover:scale-105 hover:border-base-700"
-              src={honkPhoto030} 
-              alt="Artesian Rumble - H!FW Sun 2023 - @espressobuzz" />
-          </a>
-          <a class="block" href="https://www.espressobuzz.net/Events/2023/HonkFestWest/SticksAndBones/i-BGfjMG7/A">
-            <Image
-              class="h-20 lg:h-24 xl:h-32 w-fit border-black border-4 rounded-xl hover:scale-105 hover:border-base-700"
-              src={honkPhoto894} 
-              alt="Sticks & Bones - H!FW Sun 2023 - @espressobuzz" />
-          </a>
-        </div>
-        <p class="mb-6 italic font-semibold text-lg text-right mr-2">
-          photos by <a href="https://www.espressobuzz.net/">espressobuzz</a>
-        </p>
+        <PhotoLinkContainer>
+          <PhotoLink 
+            href="https://www.espressobuzz.net/Events/2023/HonkFestWest/NeonBrassParty/i-4hfDQMp/A"
+            src={honkPhoto059} 
+            alt="Neon Brass Party - H!FW Thurs 2023 - @espressobuzz" />
+          <PhotoLink 
+            href="https://www.espressobuzz.net/Events/2023/HonkFestWest/SoulJambalaya/i-hwpMqkw/A"
+            src={honkPhoto522} 
+            alt="Soul Jambalaya - H!FW Fri 2023 - @espressobuzz" />
+          <PhotoLink 
+            href="https://www.espressobuzz.net/Events/2023/HonkFestWest/BrasslessChaps/i-TvwBs24/A"
+            class="h-20 lg:h-24 xl:h-32 w-fit border-black border-4 rounded-xl hover:scale-105 hover:border-base-700"
+            src={honkPhoto388} 
+            alt="Brassless Chaps - H!FW Sat 2023 - @espressobuzz" />
+          <PhotoLink
+            href="https://www.espressobuzz.net/Events/2023/HonkFestWest/ArtesianRumble/i-v8NLp4k/A"
+            src={honkPhoto030} 
+            alt="Artesian Rumble - H!FW Sun 2023 - @espressobuzz" />
+          <PhotoLink
+            href="https://www.espressobuzz.net/Events/2023/HonkFestWest/SticksAndBones/i-BGfjMG7/A"
+            class="h-20 lg:h-24 xl:h-32 w-fit border-black border-4 rounded-xl hover:scale-105 hover:border-base-700"
+            src={honkPhoto894} 
+            alt="Sticks & Bones - H!FW Sun 2023 - @espressobuzz" />
+          <a slot="artist-link" href="https://www.espressobuzz.net/">espressobuzz</a>
+        </PhotoLinkContainer>
         <p class="mb-6">
           Tacoma HONK! Fest will feature performances by HONK! bands from the PNW
           and local cultural groups at two locations throughout the day. Instead
