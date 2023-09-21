@@ -5,6 +5,14 @@ import ContentContainer from "@components/ContentContainer.astro";
 import MoreContainer from "@components/MoreContainer.svelte";
 import ContentTitle from "@components/ContentTitle.astro";
 import snail from "@images/snail.png";
+import tveLogo from '@images/supporters/tve.jpg';
+import hfwLogo from '@images/supporters/hfw.png';
+
+import honkPhoto059 from '@images/photos/2023-06-01-HONK-059.jpg'
+import honkPhoto522 from '@images/photos/2023-06-02-HONK-522.jpg'
+import honkPhoto388 from '@images/photos/2023-06-03-HONK-388.jpg'
+import honkPhoto030 from '@images/photos/2023-06-04-HONK-030.jpg'
+import honkPhoto894 from '@images/photos/2023-06-04-HONK-894.jpg'
 ---
 
 <BaseLayout>
@@ -45,6 +53,38 @@ import snail from "@images/snail.png";
           the energetic performances of street bands in public spaces. And it’s
           free of charge!
         </p>
+        <div class="flex gap-2 xl:gap-6 items-center justify-between mb-6 flex-wrap sm:flex-nowrap ">
+          <a class="block" href="https://www.espressobuzz.net/Events/2023/HonkFestWest/NeonBrassParty/i-4hfDQMp/A">
+            <Image
+              class="h-20 lg:h-24 xl:h-32 w-fit border-black border-4 rounded-xl"
+              src={honkPhoto059} 
+              alt="Neon Brass Party - H!FW Thurs 2023 - @espressobuzz" />
+          </a>
+          <a class="block" href="https://www.espressobuzz.net/Events/2023/HonkFestWest/SoulJambalaya/i-hwpMqkw/A">
+            <Image
+              class="h-20 lg:h-24 xl:h-32 w-fit border-black border-4 rounded-xl"
+              src={honkPhoto522} 
+              alt="Soul Jambalaya - H!FW Fri 2023 - @espressobuzz" />
+          </a>
+          <a class="block" href="https://www.espressobuzz.net/Events/2023/HonkFestWest/BrasslessChaps/i-TvwBs24/A">
+            <Image
+              class="h-20 lg:h-24 xl:h-32 w-fit border-black border-4 rounded-xl"
+              src={honkPhoto388} 
+              alt="Brassless Chaps - H!FW Sat 2023 - @espressobuzz" />
+          </a>
+          <a class="block" href="https://www.espressobuzz.net/Events/2023/HonkFestWest/ArtesianRumble/i-v8NLp4k/A">
+            <Image
+              class="h-20 lg:h-24 xl:h-32 w-fit border-black border-4 rounded-xl"
+              src={honkPhoto030} 
+              alt="Artesian Rumble - H!FW Sun 2023 - @espressobuzz" />
+          </a>
+          <a class="block" href="https://www.espressobuzz.net/Events/2023/HonkFestWest/SticksAndBones/i-BGfjMG7/A">
+            <Image
+              class="h-20 lg:h-24 xl:h-32 w-fit border-black border-4 rounded-xl"
+              src={honkPhoto894} 
+              alt="Sticks & Bones - H!FW Sun 2023 - @espressobuzz" />
+          </a>
+        </div>
         <p class="mb-6">
           Tacoma HONK! Fest will feature performances by HONK! bands from the PNW
           and local cultural groups at two locations throughout the day. Instead
@@ -105,11 +145,19 @@ import snail from "@images/snail.png";
     <ContentContainer>
       <ContentTitle>How the heck did Tacoma get its own HONK!?</ContentTitle>
       <MoreContainer client:visible>
-        <p class="mb-6 ">
+        <p class="mb-6">
           Tacoma HONK! is hosted by Tacomarama Community Street Band, sponsored by
           HONK! Festival West, and made possible with funding from Tacoma Venues
           and Events.
         </p>
+        <div class="flex gap-x-4 xl:gap-x-6 justify-center items-center flex-none mb-6">
+          <a href="https://www.tacomavenues.org/" class="block bg-white border-black border-4 p-2 rounded-xl">
+            <Image src={tveLogo} alt="TACOMA Venues & Events" class="h-14 sm:h-16 w-fit"/>
+          </a>
+          <a href="https://honkfestwest.org" class="block border-black border-4 p-2 rounded-xl bg-base-400">
+            <Image src={hfwLogo} alt="HONK! Fest West" class="h-14 sm:h-16 w-fit"/>
+          </a>
+        </div>
         <p class="mb-6 ">
           Tacomarama, Tacoma HONK! Fest’s host band, performed at the last two
           HONK! Fest West festivals in Seattle and wanted to bring it all to
