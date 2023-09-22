@@ -22,28 +22,16 @@ import honkPhoto894 from '@images/photos/2023-06-04-HONK-894.jpg'
 ---
 
 <BaseLayout>
-  <div class="w-10/12 mx-auto mb-4">
+  <div class="sm:w-10/12 mx-auto mb-4">
     <Picture img={homeSplash} alt="Tacoma HONK! | 1-5PM | October 21 | McKinley Hill"/>
   </div>
   <div class="flex flex-col gap-4 sm:gap-8">
-    <ContentContainer id="volunteer">
-      <ContentTitle>Volunteer</ContentTitle>
-      <p>
-        Fill out this
-        <a
-          href="https://docs.google.com/forms/d/e/1FAIpQLSdViYO7T8YXCqQOfzHPJcb2ap432dLPZvXu12lTYKTi9egvqQ/viewform?usp=sf_link"
-          >google form</a
-        >
-         to let us know you are interested in volunteering!
-      </p>
-      <p class="truncate">
-        Questions? Email <a
-          class="text-lg sm:text-2xl"
-          href="mailto:TacomaHONK+volunteer@gmail.com"
-          >TacomaHONK+volunteer@gmail.com</a
-        >
-      </p>
-    </ContentContainer>
+
+    <div class="z-10">
+      <a class="mx-7 text-center px-2 py-2 font-bold text-xl xl:text-4xl block border-4 font-title border-black rounded-xl bg-tertiary-400 text-primary-400 tracking-wider text-stroke-3 sm:text-stroke-2 shadow-lg focus:scale-95 focus:shadow-none hover:bg-base-500 transition-all duration-100 ease-in-out"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSdViYO7T8YXCqQOfzHPJcb2ap432dLPZvXu12lTYKTi9egvqQ/viewform?usp=sf_link"
+        >Volunteer HERE!</a>
+    </div>
 
     <ContentContainer id="festival">
       <ContentTitle>Tacoma HONK! Fest</ContentTitle>

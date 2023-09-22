@@ -9,14 +9,6 @@
   html {
     font-family: 'Poppins', 'sans-serif';
   }
-  .content-container a {
-    color: rgb(var(--color-base-700));
-    text-decoration: underline;
-    -webkit-text-stroke: 1px rgb(var(--color-base-900));
-  }
-  .content-container a:hover {
-    color: rgb(var(--color-base-600));
-  }
 }
 
 @layer components {
@@ -29,6 +21,10 @@
   .text-stroke-3 {
     -webkit-text-stroke: 3px black;
   }
+}
+
+.content-container a {
+  @apply underline-offset-2 font-title font-bold text-primary-400 text-2xl tracking-wider text-stroke-3 sm:text-stroke-1 underline;
 }
 
 .border-sketch-0 {
