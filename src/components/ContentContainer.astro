@@ -2,8 +2,8 @@
 const { id, className = "" } = Astro.props;
 ---
 
-<section {id} class="-mt-36 pt-36">
-<div class=`content-container border-sketch-${Math.round(Math.random() * 6)} bg-secondary-300 font-semibold px-8 md:px-24 py-6 md:py-8 text-lg ${className}`>
+<section {id} class="-mt-[38rem] pt-[38rem] sm:-mt-36 sm:pt-36">
+<div class=`content-container border-sketch-${Math.round(Math.random() * 6)} bg-secondary-300 font-semibold px-8 md:px-24 py-6 md:py-8 text-base sm:text-lg ${className}`>
   <div class="flex flex-col gap-3 sm:gap-6">
     <slot />
   </div>

@@ -7,7 +7,7 @@ import ContentTitle from "@components/ContentTitle.astro";
 import PhotoLinkContainer from "@components/PhotoLinkContainer.astro";
 import Picture from "@components/Picture.astro";
 import PhotoLink from "@components/PhotoLink.astro";
-import snail from "@images/snail.png";
+import NavLink from "@components/NavLink.svelte";
 import tveLogo from '@images/supporters/tve.jpg';
 import hfwLogo from '@images/supporters/hfw.png';
 import homeSplash from '@images/home-splash.png'
@@ -28,9 +28,9 @@ import honkPhoto894 from '@images/photos/2023-06-04-HONK-894.jpg'
   <div class="flex flex-col gap-4 sm:gap-8">
 
     <div class="z-10">
-      <a class="mx-7 text-center px-2 py-2 font-bold text-xl xl:text-4xl block border-4 font-title border-black rounded-3xl bg-tertiary-400 text-primary-400 tracking-wider text-stroke-3 sm:text-stroke-2 shadow-lg focus:scale-95 focus:shadow-none hover:bg-base-500 transition-all duration-100 ease-in-out"
+      <NavLink
         href="https://docs.google.com/forms/d/e/1FAIpQLSdViYO7T8YXCqQOfzHPJcb2ap432dLPZvXu12lTYKTi9egvqQ/viewform?usp=sf_link"
-        >Volunteer HERE!</a>
+        >Volunteer HERE!</NavLink>
     </div>
 
     <ContentContainer id="festival">

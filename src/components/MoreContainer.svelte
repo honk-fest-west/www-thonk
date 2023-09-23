@@ -8,23 +8,22 @@
 
 <div
   class="relative sm:max-h-full overflow-hidden"
-  class:max-h-[20rem]={!viewingMore}
+  class:max-h-[16rem]={!viewingMore}
 >
-  <div class="flex flex-col gap-3 sm:gap-6">
+  <div class="flex flex-col gap-3 sm:gap-6 text-base">
     <slot />
   </div>
   {#if !viewingMore}
     <div
-      class="block sm:hidden absolute bottom-0 left-0 right-0 h-[6rem] bg-gradient-to-t from-secondary-300 to-transparent"
+      class="block sm:hidden absolute bottom-0 left-0 right-0 h-[4rem] bg-gradient-to-t from-secondary-300 to-transparent"
     />
   {/if}
 </div>
-<div class="block sm:hidden bg-secondary-300 opacity-90">
+<div class="flex justify-center sm:hidden bg-secondary-300 opacity-90">
   {#if !viewingMore}
-    <button
-      on:click={viewMore}
-      class="block text-center text-base-700 text-stroke-1 font-bold mt-4 mx-auto"
-      >more &blacktriangledown;</button
-    >
+  <button on:click={viewMore}
+    class="font-bold text-3xl text-center font-title text-primary-400 tracking-wider text-stroke-3 sm:text-stroke-1 focus:scale-95 transition-all duration-100 ease-in-out" 
+      >more &blacktriangledown;
+  </button>
   {/if}
 </div>

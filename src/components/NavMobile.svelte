@@ -1,6 +1,6 @@
 <script>
   import {fly} from 'svelte/transition';
-  import NavButton from '@components/NavButton.svelte';
+  import NavLink from '@components/NavLink.svelte';
 
   export let navLinks;
   let className = '';
@@ -12,6 +12,10 @@
     return href === currentMenuItem?.link
       ? 'hidden'
       : 'text-shadow bg-navy text-gray-200';
+  }
+
+  function toggleMenu() {
+    menuOpen = !menuOpen
   }
 
   let menuOpen = false;
@@ -78,9 +82,11 @@
     <ul class="px-2 pb-3 pt-2 flex flex-col gap-3">
       <!-- MAIN NAV -->
       {#each navLinks as link}
-        <NavButton href={link.href}>
-          {link.display}
-        </NavButton>
+        <li>
+          <NavLink href={link.href} on:click={toggleMenu}>
+            {link.display}
+          </NavLink>
+        </li>
       {/each}
 
       <!-- <li class="text-2xl text-cobalt flex justify-center">
