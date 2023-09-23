@@ -24,7 +24,7 @@
 }
 
 .content-container a {
-  @apply underline-offset-2 font-title font-bold text-primary-400 text-2xl tracking-wider text-stroke-3 sm:text-stroke-1 underline;
+  @apply underline-offset-2 font-title font-bold text-primary-400 text-xl lg:text-2xl tracking-wider text-stroke-3 sm:text-stroke-1 underline;
 }
 
 .border-sketch-0 {

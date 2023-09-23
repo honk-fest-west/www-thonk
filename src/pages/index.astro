@@ -105,26 +105,30 @@ import honkPhoto894 from '@images/photos/2023-06-04-HONK-894.jpg'
 
     <ContentContainer id="how">
       <ContentTitle>How the heck did Tacoma get its own HONK!?</ContentTitle>
-      <p>
-        Tacoma HONK! is hosted by Tacomarama Community Street Band, sponsored by
-        HONK! Festival West, and made possible with funding from Tacoma Venues
-        and Events.
-      </p>
-      <div class="flex gap-x-4 xl:gap-x-6 justify-center items-center flex-none">
-        <a href="https://www.tacomavenues.org/" class="block bg-white border-black border-4 p-2 rounded-xl hover:scale-105 hover:border-base-700">
-          <Image src={tveLogo} alt="TACOMA Venues & Events" class="h-14 sm:h-16 w-fit"/>
-        </a>
-        <a href="https://honkfestwest.org" class="block border-black border-4 p-2 rounded-xl bg-base-400 hover:scale-105 hover:border-base-700">
-          <Image src={hfwLogo} alt="HONK! Fest West" class="h-14 sm:h-16 w-fit"/>
-        </a>
-      </div>
+      <MoreContainer client:visible>
+        <p>
+          Tacoma HONK! is hosted by Tacomarama Community Street Band, sponsored by
+          HONK! Festival West, and made possible with funding from Tacoma Venues
+          and Events.
+        </p>
+        <div class="flex gap-x-4 xl:gap-x-6 justify-center items-center flex-none">
+          <a href="https://www.tacomavenues.org/" class="block bg-white border-black border-4 p-2 rounded-xl hover:scale-105 hover:border-base-700">
+            <Image src={tveLogo} alt="TACOMA Venues & Events" class="h-14 sm:h-16 w-fit"/>
+          </a>
+          <a href="https://honkfestwest.org" class="block border-black border-4 p-2 rounded-xl bg-base-400 hover:scale-105 hover:border-base-700">
+            <Image src={hfwLogo} alt="HONK! Fest West" class="h-14 sm:h-16 w-fit"/>
+          </a>
+        </div>
+      </MoreContainer>
     </ContentContainer>
 
     <ContentContainer id="why">
       <ContentTitle>Why McKinley Hill?</ContentTitle>
-      <p>
-        Not only is McKinley Hill one of the oldest neighborhoods in Tacoma and has some of the coolest views of the Dome, but it's also home to fun and eclectic businesses and a vibrant, active, and engaged community.  It’s a Tacoma gem that Tacoma HONK! is excited to show off.
-      </p>
+      <MoreContainer client:visible>
+        <p>
+          Not only is McKinley Hill one of the oldest neighborhoods in Tacoma and has some of the coolest views of the Dome, but it's also home to fun and eclectic businesses and a vibrant, active, and engaged community.  It’s a Tacoma gem that Tacoma HONK! is excited to show off.
+        </p>
+      </MoreContainer>
     </ContentContainer>
 
     <ContentContainer id="tacomarama">
@@ -144,21 +148,21 @@ import honkPhoto894 from '@images/photos/2023-06-04-HONK-894.jpg'
 
     <ContentContainer id="contact">
       <ContentTitle>Contact Us</ContentTitle>
-      <ul class="text-center list-inside font-bold text-lg sm:text-2xl">
-        <li class="truncate mb-3">
-          <a href="mailto:tacomahonk@gmail.com">tacomahonk@gmail.com</a>
-        </li>
-        <li class="truncate mb-3">
-          <a href="https://www.instagram.com/tacomahonk"
-            >www.instagram.com/tacomahonk</a
-          >
-        </li>
-        <li class="truncate lg:mb-3">
-          <a href="https://www.facebook.com/tacomahonk"
-            >www.facebook.com/tacomahonk</a
-          >
-        </li>
-      </ul>
+        <ul class="text-center list-inside font-bold text-lg sm:text-2xl flex flex-col gap-2">
+          <li class="truncate">
+            <a href="mailto:tacomahonk@gmail.com">tacomahonk@gmail.com</a>
+          </li>
+          <li class="truncate">
+            <a href="https://www.instagram.com/tacomahonk"
+              >www.instagram.com/tacomahonk</a
+            >
+          </li>
+          <li class="truncate">
+            <a href="https://www.facebook.com/tacomahonk"
+              >www.facebook.com/tacomahonk</a
+            >
+          </li>
+        </ul>
     </ContentContainer>
   </div>
 </BaseLayout>
