@@ -1,26 +1,18 @@
 ---
+import NavDesktop from "@/components/NavDesktop.svelte";
+import NavMobile from "@/components/NavMobile.svelte";
+
 const navLinks = [
   { display: 'Volunteer', href: 'https://docs.google.com/forms/d/e/1FAIpQLSdViYO7T8YXCqQOfzHPJcb2ap432dLPZvXu12lTYKTi9egvqQ/viewform?usp=sf_link' },
   { display: 'Festival', href: '#festival' },
-  { display: 'Wanna HONK!?', href: '#wanna' },
+  { display: 'Wanna?', href: '#wanna' },
   { display: 'How?', href: '#how' },
   { display: 'Why?', href: '#why' },
-  { display: 'Tacomarama!', href: '#tacomarama'},
+  { display: 'Hosts', href: '#tacomarama'},
   { display: 'Contact', href: '#contact' }
 ]
 ---
 <nav class="px-6 py-4 border-sketch-1 bg-primary-400 w-full">
-  <ul class="justify-between flex-wrap gap-2 hidden lg:flex">
-    { navLinks.map((link) => {
-      return (
-        <li>
-          <a 
-            class="px-2 py-2 font-bold text-xl xl:text-2xl block border-4 font-title border-black rounded-xl bg-tertiary-400 text-primary-400 tracking-wider text-stroke-3 sm:text-stroke-1 shadow-lg focus:scale-95 focus:shadow-none hover:bg-base-400 transition-all duration-100 ease-in-out" 
-            href={link.href}>
-              {link.display}
-            </a>
-        </li>
-      )
-    }) }
-  </ul>
+  <NavDesktop {navLinks} class="hidden lg:block" client:idle />
+  <NavMobile {navLinks} class="block lg:hidden" client:idle />
 </nav>
