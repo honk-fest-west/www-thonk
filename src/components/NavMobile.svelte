@@ -25,7 +25,7 @@
   <div class="flex h-12 justify-end w-full">
     <button
       type="button"
-      class="w-14 p-1 font-bold text-xl xl:text-2xl block border-4 font-title border-black rounded-xl bg-tertiary-400 text-primary-400 tracking-wider text-stroke-3 sm:text-stroke-1 shadow-lg focus:scale-95 focus:shadow-none hover:bg-base-400 transition-all duration-100 ease-in-out"
+      class="w-14 p-1 font-bold text-xl xl:text-2xl block border-2 lg:border-4 font-title border-black rounded-xl bg-tertiary-400 text-primary-400 tracking-wider text-stroke-3 sm:text-stroke-1 shadow-lg focus:scale-95 focus:shadow-none hover:bg-base-400 transition-all duration-100 ease-in-out"
       on:click={() => {
         console.log('click button');
         menuOpen = !menuOpen
@@ -78,6 +78,7 @@
     id="mobile-menu"
     in:fly|fade={{ y: -200, duration: 200 }}
     out:fly|fade={{ y: -200, duration: 200 }}
+    class="px-6 py-4 border-sketch-1 bg-primary-400 w-full"
   >
     <ul class="px-2 pb-3 pt-2 flex flex-col gap-3">
       <!-- MAIN NAV -->

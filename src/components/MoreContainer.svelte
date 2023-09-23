@@ -10,7 +10,7 @@
   class="relative sm:max-h-full overflow-hidden"
   class:max-h-[16rem]={!viewingMore}
 >
-  <div class="flex flex-col gap-3 sm:gap-6 text-base">
+  <div class="flex flex-col gap-3 sm:gap-6">
     <slot />
   </div>
   {#if !viewingMore}

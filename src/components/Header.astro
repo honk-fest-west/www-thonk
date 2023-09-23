@@ -12,7 +12,6 @@ const navLinks = [
   { display: 'Contact', href: '#contact' }
 ]
 ---
-<nav class="px-6 py-4 border-sketch-1 bg-primary-400 w-full">
-  <NavDesktop {navLinks} class="hidden lg:block" client:idle />
-  <NavMobile {navLinks} class="block lg:hidden" client:idle />
-</nav>
+
+<NavDesktop {navLinks} class="hidden lg:block" client:idle />
+<NavMobile {navLinks} class="block lg:hidden" client:idle />

@@ -5,7 +5,7 @@
   export { className as class }
 </script>
 
-<div class={className}>
+<nav class={`px-6 py-4 border-sketch-1 bg-primary-400 w-full ${className}`}>
   <ul class="justify-between flex-wrap gap-2 hidden lg:flex">
     {#each navLinks as link (link.href)}
       <li>
@@ -15,4 +15,4 @@
       </li>
     {/each}
   </ul>
-</div>
+</nav>
