@@ -6,12 +6,19 @@ import MoreContainer from "@components/MoreContainer.svelte";
 import ContentTitle from "@components/ContentTitle.astro";
 import PhotoLinkContainer from "@components/PhotoLinkContainer.astro";
 import Picture from "@components/Picture.astro";
+import PictureCard from "@components/PictureCard.astro";
 import PhotoLink from "@components/PhotoLink.astro";
 import NavLink from "@components/NavLink.svelte";
+
+// IMAGE ASSETS
 import tveLogo from '@images/supporters/tve.jpg';
 import hfwLogo from '@images/supporters/hfw.png';
 import homeSplash from '@images/home-splash.png'
+import mobileSplash from '@images/splash-mobile--772x711.png'
+import catPiano from '@images/cat-piano.png'
+import octopercusion from '@images/octopercusion--409x274.png'
 
+// CAROUSEL 01
 import honkPhoto059 from '@images/photos/2023-06-01-HONK-059.jpg'
 import honkPhoto522 from '@images/photos/2023-06-02-HONK-522.jpg'
 import honkPhoto388 from '@images/photos/2023-06-03-HONK-388.jpg'
@@ -23,7 +30,12 @@ import honkPhoto894 from '@images/photos/2023-06-04-HONK-894.jpg'
 
 <BaseLayout>
   <div class="sm:w-10/12 mx-auto mb-4">
-    <Picture img={homeSplash} alt="Tacoma HONK! | 1-5PM | October 21 | McKinley Hill"/>
+    <div class="block md:hidden">
+      <Picture img={mobileSplash} alt="Tacoma HONK! | 1-5PM | October 21 | McKinley Hill" />
+    </div>
+    <div class="hidden md:block">
+      <Picture img={homeSplash} alt="Tacoma HONK! | 1-5PM | October 21 | McKinley Hill"/>
+    </div>
   </div>
   <div class="flex flex-col gap-4 sm:gap-8">
 
@@ -103,24 +115,30 @@ import honkPhoto894 from '@images/photos/2023-06-04-HONK-894.jpg'
       </MoreContainer>
     </ContentContainer>
 
-    <ContentContainer id="how">
-      <ContentTitle>How the heck did Tacoma get its own HONK!?</ContentTitle>
-      <MoreContainer client:visible>
-        <p>
-          Tacoma HONK! is hosted by Tacomarama Community Street Band, sponsored by
-          HONK! Festival West, and made possible with funding from Tacoma Venues
-          and Events.
-        </p>
-        <div class="flex gap-x-4 xl:gap-x-6 justify-center items-center flex-none">
-          <a href="https://www.tacomavenues.org/" class="block bg-white border-black border-4 p-2 rounded-xl hover:scale-105 hover:border-base-700">
-            <Image src={tveLogo} alt="TACOMA Venues & Events" class="h-14 sm:h-16 w-fit"/>
-          </a>
-          <a href="https://honkfestwest.org" class="block border-black border-4 p-2 rounded-xl bg-base-400 hover:scale-105 hover:border-base-700">
-            <Image src={hfwLogo} alt="HONK! Fest West" class="h-14 sm:h-16 w-fit"/>
-          </a>
-        </div>
-      </MoreContainer>
-    </ContentContainer>
+    <div class="flex flex-col md:flex-row-reverse">
+      <div class="block md:hidden mb-4 w-11/12 mx-auto">
+        <PictureCard img={octopercusion} alt="Octopus playing the percusion" />
+      </div>
+
+      <ContentContainer id="how">
+        <ContentTitle>How the heck did Tacoma get its own HONK!?</ContentTitle>
+        <MoreContainer client:visible>
+          <p>
+            Tacoma HONK! is hosted by Tacomarama Community Street Band, sponsored by
+            HONK! Festival West, and made possible with funding from Tacoma Venues
+            and Events.
+          </p>
+          <div class="flex gap-x-4 xl:gap-x-6 justify-center items-center flex-none">
+            <a href="https://www.tacomavenues.org/" class="block bg-white border-black border-4 p-2 rounded-xl hover:scale-105 hover:border-base-700">
+              <Image src={tveLogo} alt="TACOMA Venues & Events" class="h-14 sm:h-16 w-fit"/>
+            </a>
+            <a href="https://honkfestwest.org" class="block border-black border-4 p-2 rounded-xl bg-base-400 hover:scale-105 hover:border-base-700">
+              <Image src={hfwLogo} alt="HONK! Fest West" class="h-14 sm:h-16 w-fit"/>
+            </a>
+          </div>
+        </MoreContainer>
+      </ContentContainer>
+    </div>
 
     <ContentContainer id="why">
       <ContentTitle>Why McKinley Hill?</ContentTitle>
@@ -130,6 +148,10 @@ import honkPhoto894 from '@images/photos/2023-06-04-HONK-894.jpg'
         </p>
       </MoreContainer>
     </ContentContainer>
+
+    <div class="block md:hidden  w-11/12 mx-auto">
+      <PictureCard img={catPiano} alt="Cat dancing on piano keys." />
+    </div>
 
     <ContentContainer id="tacomarama">
       <ContentTitle>Meet our host band TACOMARAMA!</ContentTitle>

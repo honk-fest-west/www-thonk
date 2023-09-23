@@ -1,0 +1,9 @@
+---
+import Picture from '@components/Picture.astro'
+const { img, alt, className } = Astro.props;
+---
+
+<div class={className}>
+  <Picture {img} {alt} />
+</div>
+
