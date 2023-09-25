@@ -9,87 +9,97 @@ import Picture from "@components/Picture.astro";
 import PictureCard from "@components/PictureCard.astro";
 import PhotoLink from "@components/PhotoLink.astro";
 import NavLink from "@components/NavLink.svelte";
+import ImageCarousel from "@components/ImageCarousel.svelte";
 
 // IMAGE ASSETS
-import tveLogo from '@images/supporters/tve.jpg';
-import hfwLogo from '@images/supporters/hfw.png';
-import homeSplash from '@images/home-splash.png'
-import mobileSplash from '@images/splash-mobile--772x711.png'
-import catPiano from '@images/cat-piano.png'
-import octopercusion from '@images/octopercusion--409x274.png'
+import tveLogo from "@images/supporters/tve.jpg";
+import hfwLogo from "@images/supporters/hfw.png";
+import homeSplash from "@images/home-splash.png";
+import mobileSplash from "@images/splash-mobile--772x711.png";
+import catPiano from "@images/cat-piano.png";
+import octopercusion from "@images/octopercusion--409x274.png";
 
 // CAROUSEL 01
-import honkPhoto059 from '@images/photos/2023-06-01-HONK-059.jpg'
-import honkPhoto522 from '@images/photos/2023-06-02-HONK-522.jpg'
-import honkPhoto388 from '@images/photos/2023-06-03-HONK-388.jpg'
-import honkPhoto030 from '@images/photos/2023-06-04-HONK-030.jpg'
-import honkPhoto894 from '@images/photos/2023-06-04-HONK-894.jpg'
+import honkPhoto059 from "@images/photos/2023-06-01-HONK-059.jpg";
+import honkPhoto522 from "@images/photos/2023-06-02-HONK-522.jpg";
+import honkPhoto388 from "@images/photos/2023-06-03-HONK-388.jpg";
+import honkPhoto030 from "@images/photos/2023-06-04-HONK-030.jpg";
+import honkPhoto894 from "@images/photos/2023-06-04-HONK-894.jpg";
+const slides01 = [
+  {
+    img: honkPhoto059,
+    alt: "Neon Brass Party - H!FW Thurs 2023 - @espressobuzz",
+  },
+  { img: honkPhoto522, alt: "Soul Jambalaya - H!FW Fri 2023 - @espressobuzz" },
+  { img: honkPhoto388, alt: "Brassless Chaps - H!FW Sat 2023 - @espressobuzz" },
+  { img: honkPhoto030, alt: "Artesian Rumble - H!FW Sun 2023 - @espressobuzz" },
+  { img: honkPhoto894, alt: "Sticks & Bones - H!FW Sun 2023 - @espressobuzz" },
+];
 
-
+// CAROUSEL 02
+import tacomarama01 from "@images/photos/tacomarama-01.jpg";
+import tacomarama02 from "@images/photos/tacomarama-02.jpg";
+import tacomarama03 from "@images/photos/tacomarama-03.jpg";
+import tacomarama04 from "@images/photos/tacomarama-04.jpg";
+const slides02 = [
+  { img: tacomarama01, alt: "Tacomarama!" },
+  { img: tacomarama02, alt: "Tacomarama!" },
+  { img: tacomarama03, alt: "Tacomarama!" },
+  { img: tacomarama04, alt: "Tacomarama!" },
+];
 ---
 
 <BaseLayout>
   <div class="md:w-10/12 mx-auto mb-4">
     <div class="block md:hidden">
-      <Picture img={mobileSplash} alt="Tacoma HONK! | 1-5PM | October 21 | McKinley Hill" />
+      <Picture
+        img={mobileSplash}
+        alt="Tacoma HONK! | 1-5PM | October 21 | McKinley Hill"
+      />
     </div>
     <div class="hidden md:block">
-      <Picture img={homeSplash} alt="Tacoma HONK! | 1-5PM | October 21 | McKinley Hill"/>
+      <Picture
+        img={homeSplash}
+        alt="Tacoma HONK! | 1-5PM | October 21 | McKinley Hill"
+      />
     </div>
   </div>
   <div class="flex flex-col gap-4 sm:gap-8">
-
     <div class="z-10">
       <NavLink
         href="https://docs.google.com/forms/d/e/1FAIpQLSdViYO7T8YXCqQOfzHPJcb2ap432dLPZvXu12lTYKTi9egvqQ/viewform?usp=sf_link"
-        >Volunteer HERE!</NavLink>
+      >
+        Volunteer HERE!
+      </NavLink>
     </div>
 
     <ContentContainer id="festival">
       <ContentTitle>Tacoma HONK! Fest</ContentTitle>
       <MoreContainer client:visible>
         <p>
-          Get spooky at Tacoma’s first annual HONK! Fest on Oct 21st, 2023 in the
-          McKinley Hill neighborhood. Put on your favorite costume (Galloping
-          Gertie anyone?) and bring a funky noisemaker. Meet your neighbors, local
-          musicians, maybe even join a band!
+          Get spooky at Tacoma’s first annual HONK! Fest on Oct 21st, 2023 in
+          the McKinley Hill neighborhood. Put on your favorite costume
+          (Galloping Gertie anyone?) and bring a funky noisemaker. Meet your
+          neighbors, local musicians, maybe even join a band!
         </p>
         <p>
           Tacoma HONK! Fest is an accessible community music festival driven by
-          the energetic performances of PNW street bands and cultural groups in public spaces. And it’s
-          free of charge!
+          the energetic performances of PNW street bands and cultural groups in
+          public spaces. And it’s free of charge!
         </p>
         <p>
-          Instead of formal stages, bands will be moving and marching and dancing around. The audience is always welcome to join in!
+          Instead of formal stages, bands will be moving and marching and
+          dancing around. The audience is always welcome to join in!
         </p>
         <p>
-          We encourage you to walk, bike, or take public transit to the festival. Feel free to walk (or dance) between the stage areas set up in the McKinley Hill business district.
+          We encourage you to walk, bike, or take public transit to the
+          festival. Feel free to walk (or dance) between the stage areas set up
+          in the McKinley Hill business district.
         </p>
-        <PhotoLinkContainer>
-          <PhotoLink 
-            href="https://www.espressobuzz.net/Events/2023/HonkFestWest/NeonBrassParty/i-4hfDQMp/A"
-            src={honkPhoto059} 
-            alt="Neon Brass Party - H!FW Thurs 2023 - @espressobuzz" />
-          <PhotoLink 
-            href="https://www.espressobuzz.net/Events/2023/HonkFestWest/SoulJambalaya/i-hwpMqkw/A"
-            src={honkPhoto522} 
-            alt="Soul Jambalaya - H!FW Fri 2023 - @espressobuzz" />
-          <PhotoLink 
-            href="https://www.espressobuzz.net/Events/2023/HonkFestWest/BrasslessChaps/i-TvwBs24/A"
-            class="h-20 lg:h-24 xl:h-32 w-fit border-black border-4 rounded-xl hover:scale-105 hover:border-base-700"
-            src={honkPhoto388} 
-            alt="Brassless Chaps - H!FW Sat 2023 - @espressobuzz" />
-          <PhotoLink
-            href="https://www.espressobuzz.net/Events/2023/HonkFestWest/ArtesianRumble/i-v8NLp4k/A"
-            src={honkPhoto030} 
-            alt="Artesian Rumble - H!FW Sun 2023 - @espressobuzz" />
-          <PhotoLink
-            href="https://www.espressobuzz.net/Events/2023/HonkFestWest/SticksAndBones/i-BGfjMG7/A"
-            class="h-20 lg:h-24 xl:h-32 w-fit border-black border-4 rounded-xl hover:scale-105 hover:border-base-700"
-            src={honkPhoto894} 
-            alt="Sticks & Bones - H!FW Sun 2023 - @espressobuzz" />
-          <a slot="artist-link" href="https://www.espressobuzz.net/">espressobuzz</a>
-        </PhotoLinkContainer>
+        <ImageCarousel slides={slides01} client:visible />
+        <p class="italic font-semibold text-lg text-right mr-2">
+          photos by <a href="https://www.espressobuzz.net/">espressobuzz</a>
+        </p>
       </MoreContainer>
     </ContentContainer>
 
@@ -109,7 +119,7 @@ import honkPhoto894 from '@images/photos/2023-06-04-HONK-894.jpg'
           >
             October 7th
           </a>
-          to create instruments from recycled objects that they can bring to
+           to create instruments from recycled objects that they can bring to
           Tacoma HONK! fest to join in the music-making.
         </p>
       </MoreContainer>
@@ -124,16 +134,32 @@ import honkPhoto894 from '@images/photos/2023-06-04-HONK-894.jpg'
         <ContentTitle>How the heck did Tacoma get its own HONK!?</ContentTitle>
         <MoreContainer client:visible>
           <p>
-            Tacoma HONK! is hosted by Tacomarama Community Street Band, sponsored by
-            HONK! Festival West, and made possible with funding from Tacoma Venues
-            and Events.
+            Tacoma HONK! is hosted by Tacomarama Community Street Band,
+            sponsored by HONK! Festival West, and made possible with funding
+            from Tacoma Venues and Events.
           </p>
-          <div class="flex gap-x-4 xl:gap-x-6 justify-center items-center flex-none">
-            <a href="https://www.tacomavenues.org/" class="block bg-white border-black border-4 p-2 rounded-xl hover:scale-105 hover:border-base-700">
-              <Image src={tveLogo} alt="TACOMA Venues & Events" class="h-14 sm:h-16 w-fit"/>
+          <div
+            class="flex gap-x-4 xl:gap-x-6 justify-center items-center flex-none"
+          >
+            <a
+              href="https://www.tacomavenues.org/"
+              class="block bg-white border-black border-4 p-2 rounded-xl hover:scale-105 hover:border-base-700"
+            >
+              <Image
+                src={tveLogo}
+                alt="TACOMA Venues & Events"
+                class="h-14 sm:h-16 w-fit"
+              />
             </a>
-            <a href="https://honkfestwest.org" class="block border-black border-4 p-2 rounded-xl bg-base-400 hover:scale-105 hover:border-base-700">
-              <Image src={hfwLogo} alt="HONK! Fest West" class="h-14 sm:h-16 w-fit"/>
+            <a
+              href="https://honkfestwest.org"
+              class="block border-black border-4 p-2 rounded-xl bg-base-400 hover:scale-105 hover:border-base-700"
+            >
+              <Image
+                src={hfwLogo}
+                alt="HONK! Fest West"
+                class="h-14 sm:h-16 w-fit"
+              />
             </a>
           </div>
         </MoreContainer>
@@ -144,12 +170,15 @@ import honkPhoto894 from '@images/photos/2023-06-04-HONK-894.jpg'
       <ContentTitle>Why McKinley Hill?</ContentTitle>
       <MoreContainer client:visible>
         <p>
-          Not only is McKinley Hill one of the oldest neighborhoods in Tacoma and has some of the coolest views of the Dome, but it's also home to fun and eclectic businesses and a vibrant, active, and engaged community.  It’s a Tacoma gem that Tacoma HONK! is excited to show off.
+          Not only is McKinley Hill one of the oldest neighborhoods in Tacoma
+          and has some of the coolest views of the Dome, but it's also home to
+          fun and eclectic businesses and a vibrant, active, and engaged
+          community. It’s a Tacoma gem that Tacoma HONK! is excited to show off.
         </p>
       </MoreContainer>
     </ContentContainer>
 
-    <div class="block md:hidden  w-11/12 mx-auto">
+    <div class="block md:hidden w-11/12 mx-auto">
       <PictureCard img={catPiano} alt="Cat dancing on piano keys." />
     </div>
 
@@ -159,32 +188,35 @@ import honkPhoto894 from '@images/photos/2023-06-04-HONK-894.jpg'
         <p>
           Tacomarama Community Street Band is a music ensemble that regularly
           performs at Tacoma-based events, including Tacoma Light Trail Parade,
-          Tacoma Porchfest, and
-          numerous neighborhood celebrations. They’re proud of being all ages and
-          all inclusive, so much so that if you get close enough, a stray trombone
-          may hook your Rainiers hoodie and yank you into the band forever.
+          Tacoma Porchfest, and numerous neighborhood celebrations. They’re
+          proud of being all ages and all inclusive, so much so that if you get
+          close enough, a stray trombone may hook your Rainiers hoodie and yank
+          you into the band forever.
           <a href="https://tacomarama.org">tacomarama.org</a>
         </p>
+        <ImageCarousel slides={slides02} client:visible />
       </MoreContainer>
     </ContentContainer>
 
     <ContentContainer id="contact">
       <ContentTitle>Contact Us</ContentTitle>
-        <ul class="text-center list-inside font-bold text-lg sm:text-2xl flex flex-col gap-2">
-          <li class="truncate">
-            <a href="mailto:tacomahonk@gmail.com">tacomahonk@gmail.com</a>
-          </li>
-          <li class="truncate">
-            <a href="https://www.instagram.com/tacomahonk"
-              >www.instagram.com/tacomahonk</a
-            >
-          </li>
-          <li class="truncate">
-            <a href="https://www.facebook.com/tacomahonk"
-              >www.facebook.com/tacomahonk</a
-            >
-          </li>
-        </ul>
+      <ul
+        class="text-center list-inside font-bold text-lg sm:text-2xl flex flex-col gap-2"
+      >
+        <li class="truncate">
+          <a href="mailto:tacomahonk@gmail.com">tacomahonk@gmail.com</a>
+        </li>
+        <li class="truncate">
+          <a href="https://www.instagram.com/tacomahonk"
+            >www.instagram.com/tacomahonk</a
+          >
+        </li>
+        <li class="truncate">
+          <a href="https://www.facebook.com/tacomahonk"
+            >www.facebook.com/tacomahonk</a
+          >
+        </li>
+      </ul>
     </ContentContainer>
   </div>
 </BaseLayout>
