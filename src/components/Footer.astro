@@ -7,7 +7,7 @@ import hfwLogo from "@images/supporters/hfw.png";
 
 <div class="border-sketch-3 mx-6 2xl:mx-0 bg-base-300 relative">
   <div
-    class="overflow-hidden flex flex-col items-center px-4 lg:px-8 py-4 gap-x-2 lg:gap-x-4 xl:gap-x-6 sm:flex-row sm:justify-between"
+    class="flex flex-col items-center px-4 lg:px-8 py-4 gap-x-2 lg:gap-x-4 xl:gap-x-6 sm:flex-row sm:justify-between"
   >
     <div class="flex gap-x-2 lg:gap-x-4 xl:gap-x-6">
       <a href="https://instagram.com/tacomahonk">
@@ -60,7 +60,12 @@ import hfwLogo from "@images/supporters/hfw.png";
     >
       @tacomaHONK
     </div>
-    <div class="flex gap-x-4 xl:gap-x-6 justify-center items-center flex-none">
+    <div
+      class="flex gap-x-4 xl:gap-x-6 justify-center items-center flex-none items-baseline"
+    >
+      <div class="z-50">
+        <GoldenDino client:visible />
+      </div>
       <a
         href="https://www.tacomavenues.org/"
         class="block bg-white border-black border-4 p-2 rounded-xl hover:scale-105 hover:border-base-700"
@@ -82,9 +87,5 @@ import hfwLogo from "@images/supporters/hfw.png";
         />
       </a>
     </div>
-  </div>
-  <div class="absolute bottom-4 left-0 w-full flex justify-around">
-    <div></div>
-    <GoldenDino client:visible />
   </div>
 </div>
