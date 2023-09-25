@@ -1,21 +1,21 @@
 <script>
-  import {fly} from 'svelte/transition';
-  import NavLink from '@components/NavLink.svelte';
+  import { fly } from "svelte/transition";
+  import NavLink from "@components/NavLink.svelte";
 
   export let navLinks;
-  let className = '';
-  export { className as class }
+  let className = "";
+  export { className as class };
   export let title = false;
   export let currentMenuItem = null;
 
   function activeListItem(href) {
     return href === currentMenuItem?.link
-      ? 'hidden'
-      : 'text-shadow bg-navy text-gray-200';
+      ? "hidden"
+      : "text-shadow bg-navy text-gray-200";
   }
 
   function toggleMenu() {
-    menuOpen = !menuOpen
+    menuOpen = !menuOpen;
   }
 
   let menuOpen = false;
@@ -25,10 +25,10 @@
   <div class="flex h-12 justify-end w-full">
     <button
       type="button"
-      class="w-14 p-1 font-bold text-xl xl:text-2xl block border-2 lg:border-4 font-title border-black rounded-xl bg-tertiary-400 text-primary-400 tracking-wider text-stroke-3 sm:text-stroke-1 shadow-lg focus:scale-95 focus:shadow-none hover:bg-base-400 transition-all duration-100 ease-in-out"
+      class="w-14 p-1 font-bold text-xl xl:text-2xl block border-2 lg:border-4 font-title border-black rounded-xl bg-tertiary-400 text-primary-400 tracking-wider sm:text-stroke-1 shadow-lg focus:scale-95 focus:shadow-none hover:bg-base-400 transition-all duration-100 ease-in-out"
       on:click={() => {
-        console.log('click button');
-        menuOpen = !menuOpen
+        console.log("click button");
+        menuOpen = !menuOpen;
       }}
     >
       <!-- Mobile menu button-->

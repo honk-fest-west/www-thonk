@@ -21,9 +21,10 @@
 </div>
 <div class="flex justify-center sm:hidden bg-secondary-300 opacity-90">
   {#if !viewingMore}
-  <button on:click={viewMore}
-    class="font-bold text-3xl text-center font-title text-primary-400 tracking-wider text-stroke-3 sm:text-stroke-1 focus:scale-95 transition-all duration-100 ease-in-out" 
+    <button
+      on:click={viewMore}
+      class="font-bold text-3xl text-center font-title text-primary-400 tracking-wider text-stroke-2 sm:text-stroke-1 focus:scale-95 transition-all duration-100 ease-in-out"
       >more &blacktriangledown;
-  </button>
+    </button>
   {/if}
 </div>
