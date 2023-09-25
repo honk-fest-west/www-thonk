@@ -25,7 +25,7 @@
   <div class="flex h-12 justify-end w-full">
     <button
       type="button"
-      class="w-14 p-1 font-bold text-xl xl:text-2xl block border-2 lg:border-4 font-title border-black rounded-xl bg-tertiary-400 text-primary-400 tracking-wider sm:text-stroke-1 shadow-lg focus:scale-95 focus:shadow-none hover:bg-base-400 transition-all duration-100 ease-in-out"
+      class="w-14 p-1 font-bold text-xl xl:text-2xl block border-[3px] font-title border-black rounded-xl bg-tertiary-400 tracking-wider sm:text-stroke-1 shadow-lg focus:scale-95 focus:shadow-none hover:text-base-400 focus:bg-base-400 transition-all duration-100 ease-in-out"
       on:click={() => {
         console.log("click button");
         menuOpen = !menuOpen;

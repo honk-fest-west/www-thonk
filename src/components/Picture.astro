@@ -1,26 +1,28 @@
 ---
-import { getImage } from 'astro:assets'
+import { getImage } from "astro:assets";
 
-const { img, alt, mediaWidths = [1280, 1024, 768, 640] } = Astro.props
+const { img, alt, mediaWidths = [1280, 1024, 768, 640] } = Astro.props;
 
-function calcHeight(width) {
-  return (width / img.width) * img.height
+function calcHeight(width: number) {
+  return (width / img.width) * img.height;
 }
 
 const mediaImgs = await Promise.all(
-  mediaWidths.map(width => 
-    getImage({ 
-      src: img, 
-      width: `${width}px`, 
-      height: `${calcHeight(width)}px` 
-    })
-  )
-)
+  mediaWidths.map((width: number) =>
+    getImage({
+      src: img,
+      width: `${width}px`,
+      height: `${calcHeight(width)}px`,
+    }),
+  ),
+);
 ---
 
 <picture>
-  {mediaImgs.map((img) => (
-    <source media={`(max-width: ${img.width}px)`} srcset={img.src} />
-  ))}
+  {
+    mediaImgs.map((img) => (
+      <source media={`(max-width: ${img.width}px)`} srcset={img.src} />
+    ))
+  }
   <img src={mediaImgs[0].src} {alt} />
 </picture>
