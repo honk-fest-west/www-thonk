@@ -11,7 +11,8 @@
 </a>
 
 <style>
-  a:hover {
+  a:hover,
+  a:focus {
     color: rgba(var(--color-primary-400));
     background-color: rgba(var(--color-base-400));
   }
