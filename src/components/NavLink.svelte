@@ -13,6 +13,6 @@
 <style>
   a:hover {
     color: rgba(var(--color-primary-400));
-    background-color: rgba(var(--color-tertiary-400));
+    background-color: rgba(var(--color-base-400));
   }
 </style>
