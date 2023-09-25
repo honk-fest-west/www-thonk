@@ -10,7 +10,7 @@
 >
   {#each slides as { img: { src, width, height }, alt }}
     <SplideSlide>
-      <img {src} {alt} class="max-h-[36rem]" />
+      <img {src} {alt} {width} {height} class="max-h-[18em] lg:max-h-[30em]" />
     </SplideSlide>
   {/each}
 </Splide>

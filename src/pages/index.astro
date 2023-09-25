@@ -4,10 +4,8 @@ import BaseLayout from "@layouts/BaseLayout.astro";
 import ContentContainer from "@components/ContentContainer.astro";
 import MoreContainer from "@components/MoreContainer.svelte";
 import ContentTitle from "@components/ContentTitle.astro";
-import PhotoLinkContainer from "@components/PhotoLinkContainer.astro";
 import Picture from "@components/Picture.astro";
 import PictureCard from "@components/PictureCard.astro";
-import PhotoLink from "@components/PhotoLink.astro";
 import NavLink from "@components/NavLink.svelte";
 import ImageCarousel from "@components/ImageCarousel.svelte";
 
@@ -200,19 +198,23 @@ const slides02 = [
 
     <ContentContainer id="contact">
       <ContentTitle>Contact Us</ContentTitle>
-      <ul
-        class="text-center list-inside font-bold text-lg sm:text-2xl flex flex-col gap-2"
-      >
+      <ul class="text-center list-inside font-bold flex flex-col gap-2">
         <li class="truncate">
-          <a href="mailto:tacomahonk@gmail.com">tacomahonk@gmail.com</a>
+          <a class="text-lg sm:text-2xl" href="mailto:tacomahonk@gmail.com"
+            >tacomahonk@gmail.com</a
+          >
         </li>
         <li class="truncate">
-          <a href="https://www.instagram.com/tacomahonk"
+          <a
+            class="text-lg sm:text-2xl"
+            href="https://www.instagram.com/tacomahonk"
             >www.instagram.com/tacomahonk</a
           >
         </li>
         <li class="truncate">
-          <a href="https://www.facebook.com/tacomahonk"
+          <a
+            class="text-lg sm:text-2xl"
+            href="https://www.facebook.com/tacomahonk"
             >www.facebook.com/tacomahonk</a
           >
         </li>
