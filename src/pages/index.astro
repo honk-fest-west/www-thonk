@@ -89,26 +89,28 @@ const slides02 = [
       <MoreContainer client:visible>
         <Performing />
         <HorizontalRule />
-        <p>
-          Get spooky at Tacoma’s first annual HONK! Fest on Oct 21st, 2023 in
-          the McKinley Hill neighborhood. Put on your favorite costume
-          (Galloping Gertie anyone?) and bring a funky noisemaker. Meet your
-          neighbors, local musicians, maybe even join a band!
-        </p>
-        <p>
-          Tacoma HONK! Fest is an accessible community music festival driven by
-          the energetic performances of PNW street bands and cultural groups in
-          public spaces. And it’s free of charge!
-        </p>
-        <p>
-          Instead of formal stages, bands will be moving and marching and
-          dancing around. The audience is always welcome to join in!
-        </p>
-        <p>
-          We encourage you to walk, bike, or take public transit to the
-          festival. Feel free to walk (or dance) between the stage areas set up
-          in the McKinley Hill business district.
-        </p>
+        <div class="md:columns-2">
+          <p class="mb-2 first-line:uppercase first-line:tracking-widest">
+            Get spooky at Tacoma’s first annual HONK! Fest on Oct 21st, 2023 in
+            the McKinley Hill neighborhood. Put on your favorite costume
+            (Galloping Gertie anyone?) and bring a funky noisemaker. Meet your
+            neighbors, local musicians, maybe even join a band!
+          </p>
+          <p class="mb-2">
+            Tacoma HONK! Fest is an accessible community music festival driven
+            by the energetic performances of PNW street bands and cultural
+            groups in public spaces. And it’s free of charge!
+          </p>
+          <p class="mb-2">
+            Instead of formal stages, bands will be moving and marching and
+            dancing around. The audience is always welcome to join in!
+          </p>
+          <p>
+            We encourage you to walk, bike, or take public transit to the
+            festival. Feel free to walk (or dance) between the stage areas set
+            up in the McKinley Hill business district.
+          </p>
+        </div>
         <ImageCarousel slides={slides01} client:visible />
         <p class="italic font-semibold text-lg text-right mr-2">
           photos by <a href="https://www.espressobuzz.net/">espressobuzz</a>
@@ -119,22 +121,24 @@ const slides02 = [
     <ContentContainer id="wanna">
       <ContentTitle>Wanna HONK! with us?</ContentTitle>
       <MoreContainer client:visible>
-        <p>
-          Dust off your middle school clarinet, your undergrad English Horn, or
-          find that shoebox with that 3rd grade recorder, and jump in on the
-          public jam session (details coming). We welcome anyone interested,
-          regardless of age or experience.
-        </p>
-        <p>
-          Younger attendees are invited to visit the Moore Library on
-          <a
-            href="https://tacoma.bibliocommons.com/events/64c9552e591918360005fb3d"
-          >
-            October 7th
-          </a>
-           to create instruments from recycled objects that they can bring to
-          Tacoma HONK! fest to join in the music-making.
-        </p>
+        <div class="md:columns-2">
+          <p class="mb-2 first-line:uppercase first-line:tracking-widest">
+            Dust off your middle school clarinet, your undergrad English Horn,
+            or find that shoebox with that 3rd grade recorder, and jump in on
+            the public jam session (details coming). We welcome anyone
+            interested, regardless of age or experience.
+          </p>
+          <p>
+            Younger attendees are invited to visit the Moore Library on
+            <a
+              href="https://tacoma.bibliocommons.com/events/64c9552e591918360005fb3d"
+            >
+              October 7th
+            </a>
+             to create instruments from recycled objects that they can bring to
+            Tacoma HONK! fest to join in the music-making.
+          </p>
+        </div>
       </MoreContainer>
     </ContentContainer>
 
@@ -182,7 +186,9 @@ const slides02 = [
     <ContentContainer id="why">
       <ContentTitle>Why McKinley Hill?</ContentTitle>
       <MoreContainer client:visible>
-        <p>
+        <p
+          class="md:columns-2 mb-2 first-line:uppercase first-line:tracking-widest"
+        >
           Not only is McKinley Hill one of the oldest neighborhoods in Tacoma
           and has some of the coolest views of the Dome, but it's also home to
           fun and eclectic businesses and a vibrant, active, and engaged
@@ -198,15 +204,19 @@ const slides02 = [
     <ContentContainer id="tacomarama">
       <ContentTitle>Meet our host band TACOMARAMA!</ContentTitle>
       <MoreContainer client:visible>
-        <p>
-          Tacomarama Community Street Band is a music ensemble that regularly
-          performs at Tacoma-based events, including Tacoma Light Trail Parade,
-          Tacoma Porchfest, and numerous neighborhood celebrations. They’re
-          proud of being all ages and all inclusive, so much so that if you get
-          close enough, a stray trombone may hook your Rainiers hoodie and yank
-          you into the band forever.
-          <a href="https://tacomarama.org">tacomarama.org</a>
-        </p>
+        <div
+          class="md:columns-2 mb-2 first-line:uppercase first-line:tracking-widest"
+        >
+          <p>
+            Tacomarama Community Street Band is a music ensemble that regularly
+            performs at Tacoma-based events, including Tacoma Light Trail
+            Parade, Tacoma Porchfest, and numerous neighborhood celebrations.
+            They’re proud of being all ages and all inclusive, so much so that
+            if you get close enough, a stray trombone may hook your Rainiers
+            hoodie and yank you into the band forever.
+            <a href="https://tacomarama.org">tacomarama.org</a>
+          </p>
+        </div>
         <HorizontalRule />
         <ImageCarousel slides={slides02} client:visible />
       </MoreContainer>
