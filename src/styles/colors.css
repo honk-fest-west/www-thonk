@@ -1,5 +1,6 @@
 /* https://uicolors.app/create */
 :root {
+  /*neon mint blue*/
   --color-base-50: 237 255 253;
   --color-base-100: 192 255 251;
   --color-base-200: 129 255 248;
@@ -12,6 +13,7 @@
   --color-base-900: 4 93 91;
   --color-base-950: 0 56 58;
 
+  /*background purple*/
   --color-base2-50: 249 245 255;
   --color-base2-100: 241 232 255;
   --color-base2-200: 230 212 255;
@@ -24,6 +26,7 @@
   --color-base2-900: 80 26 137;
   --color-base2-950: 52 5 102;
 
+  /*hot plum purple*/
   --color-primary-50: 253 244 255;
   --color-primary-100: 251 233 254;
   --color-primary-200: 246 210 252;
@@ -36,6 +39,7 @@
   --color-primary-900: 113 29 114;
   --color-primary-950: 75 7 75;
 
+  /*big bird yellow*/
   --color-secondary-50: 255 248 235;
   --color-secondary-100: 255 236 198;
   --color-secondary-200: 255 215 136;
@@ -48,6 +52,7 @@
   --color-secondary-900: 122 38 13;
   --color-secondary-950: 70 17 2;
 
+  /*bubblegum pink*/
   --color-tertiary-50: 255 241 241;
   --color-tertiary-100: 255 225 225;
   --color-tertiary-200: 255 199 199;

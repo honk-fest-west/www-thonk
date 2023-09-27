@@ -1,4 +1,5 @@
 import { defineConfig } from 'astro/config';
+import { ViteToml } from "vite-plugin-toml";
 import tailwind from "@astrojs/tailwind";
 import netlify from "@astrojs/netlify/functions";
 
@@ -13,6 +14,9 @@ export default defineConfig({
       applyBaseStyles: false,      
     }), 
     svelte()],
+  vite: {
+    plugins: [ViteToml()]
+  },
   output: "server",
   adapter: netlify()
 });

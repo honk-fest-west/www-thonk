@@ -72,18 +72,6 @@ module.exports = {
 			'tertiary-800': 'rgb(var(--color-tertiary-800) / <alpha-value>)',
 			'tertiary-900': 'rgb(var(--color-tertiary-900) / <alpha-value>)',
 			'tertiary-950': 'rgb(var(--color-tertiary-950) / <alpha-value>)',
-
-			'color4-50': 'rgb(var(--color-color4-50) / <alpha-value>)',
-			'color4-100': 'rgb(var(--color-color4-100) / <alpha-value>)',
-			'color4-200': 'rgb(var(--color-color4-200) / <alpha-value>)',
-			'color4-300': 'rgb(var(--color-color4-300) / <alpha-value>)',
-			'color4-400': 'rgb(var(--color-color4-400) / <alpha-value>)',
-			'color4-500': 'rgb(var(--color-color4-500) / <alpha-value>)',
-			'color4-600': 'rgb(var(--color-color4-600) / <alpha-value>)',
-			'color4-700': 'rgb(var(--color-color4-700) / <alpha-value>)',
-			'color4-800': 'rgb(var(--color-color4-800) / <alpha-value>)',
-			'color4-900': 'rgb(var(--color-color4-900) / <alpha-value>)',
-			'color4-950': 'rgb(var(--color-color4-950) / <alpha-value>)'
 		}
 	},
 	plugins: [],
