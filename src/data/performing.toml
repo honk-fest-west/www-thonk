@@ -1,4 +1,7 @@
 [[bands]]
+name = 'AGAB'
+location = 'Seattle, WA'
+[[bands]]
 name = 'Analog Brass'
 location = 'Bellingham, WA'
 [[bands]]
@@ -23,7 +26,7 @@ location = 'Seattle, WA'
 name = 'Lincoln High School Drumline'
 location = 'Tacoma, WA'
 [[bands]]
-name = 'Mariachi Esperanz'
+name = 'Mariachi Esperanza'
 location = 'Tacoma, WA'
 [[bands]]
 name = 'Neon Brass Party'
