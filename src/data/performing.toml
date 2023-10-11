@@ -11,11 +11,17 @@ location = 'Olympia, WA'
 name = 'Better As Brass'
 location = 'Seattle, WA'
 [[bands]]
+name = 'Bigfoot Brass Band'
+location = 'Lakewood, WA'
+[[bands]]
 name = 'The Brass Cats'
 location = 'Portland, OR'
 [[bands]]
 name = 'Brassless Chaps'
 location = 'Portland, OR'
+[[bands]]
+name = 'Cambodian Classical & Fold Dance of NorthWest'
+location = 'Tacoma, WA'
 [[bands]]
 name = 'Chaotic Noise Marching Corps'
 location = 'Seattle, WA'
@@ -23,10 +29,13 @@ location = 'Seattle, WA'
 name = 'Filthy FemCorps'
 location = 'Seattle, WA'
 [[bands]]
-name = 'Lincoln High School Drumline'
+name = 'HONK! All Stars'
+location = 'Earth, Universe'
+[[bands]]
+name = 'Krusar Mon - Family First Dance Group'
 location = 'Tacoma, WA'
 [[bands]]
-name = 'Mariachi Esperanza'
+name = 'Lincoln High School Drumline'
 location = 'Tacoma, WA'
 [[bands]]
 name = 'Neon Brass Party'
@@ -34,9 +43,6 @@ location = 'Seattle, WA'
 [[bands]]
 name = 'One Love'
 location = 'Seattle, WA'
-[[bands]]
-name = 'Ricky Thlang Dance Group'
-location = 'Tacoma, WA'
 [[bands]]
 name = 'Soul Jambalaya'
 location = 'Seattle, WA'
@@ -61,3 +67,6 @@ location = 'Port Townsend, WA'
 [[bands]]
 name = 'Vaipouli Entertainment'
 location = 'Tacoma, WA'
+[[bands]]
+name = 'VamoLá'
+location = 'Seattle, WA'

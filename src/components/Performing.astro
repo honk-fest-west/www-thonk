@@ -6,7 +6,7 @@ import performing from "@data/performing.toml";
   <ul>
     {
       performing.bands.map((band: { name: string; location: string }) => (
-        <li class="leading-8">
+        <li class="leading-6 sm:leading-8">
           <span>{band.name}</span> <span>&mdash;</span>
           <span>{band.location}</span>
         </li>
