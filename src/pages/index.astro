@@ -13,6 +13,7 @@ import Performing from "@/components/Performing.astro";
 import NavLink from "@components/NavLink.svelte";
 import ImageCarousel from "@components/ImageCarousel.svelte";
 import MoreContainer from "@components/MoreContainer.svelte";
+import ScheduleButton from "@/components/ScheduleButton.svelte";
 
 // IMAGE ASSETS
 import tveLogo from "@images/supporters/tve.jpg";
@@ -87,6 +88,9 @@ const slides02 = [
         <span class="opacity-80" slot="sub-title-3">Hill</span>
       </ContentTitle>
       <MoreContainer client:visible>
+        <div class="flex justify-center">
+          <ScheduleButton client:only="svelte"/>
+        </div>
         <Performing />
         <HorizontalRule />
         <div class="md:columns-2">
