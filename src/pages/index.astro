@@ -88,11 +88,9 @@ const slides02 = [
         <span class="opacity-80" slot="sub-title-3">Hill</span>
       </ContentTitle>
       <MoreContainer client:visible>
-        <div class="flex justify-center">
+        <!-- <div class="flex justify-center">
           <ScheduleButton client:only="svelte"/>
-        </div>
-        <Performing />
-        <HorizontalRule />
+        </div> -->
         <div class="md:columns-2">
           <p class="mb-2 first-line:uppercase first-line:tracking-widest">
             Get spooky at Tacoma’s first annual HONK! Fest on Oct 21st, 2023 in
@@ -115,6 +113,8 @@ const slides02 = [
             up in the McKinley Hill business district.
           </p>
         </div>
+        <HorizontalRule />
+        <Performing />
         <ImageCarousel slides={slides01} client:visible />
         <p class="italic font-semibold text-lg text-right mr-2">
           photos by <a href="https://www.espressobuzz.net/">espressobuzz</a>
