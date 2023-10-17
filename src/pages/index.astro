@@ -13,7 +13,7 @@ import Performing from "@/components/Performing.astro";
 import NavLink from "@components/NavLink.svelte";
 import ImageCarousel from "@components/ImageCarousel.svelte";
 import MoreContainer from "@components/MoreContainer.svelte";
-import ScheduleButton from "@/components/ScheduleButton.svelte";
+import ModalButton from "@/components/ModalButton.svelte";
 
 // IMAGE ASSETS
 import tveLogo from "@images/supporters/tve.jpg";
@@ -22,6 +22,9 @@ import homeSplash from "@images/home-splash.png";
 import mobileSplash from "@images/splash-mobile--772x711.png";
 import catPiano from "@images/cat-piano.png";
 import octopercusion from "@images/octopercusion--409x274.png";
+import schedule from "@images/2023-tacoma-honk-schedule.png";
+import map from "@images/2023-tacoma-honk-map.png";
+const pamphletDownloadPath = "/2023-tacoma-honk-pamphlet.pdf";
 
 // CAROUSEL 01
 import honkPhoto059 from "@images/photos/2023-06-01-HONK-059.jpg";
@@ -75,6 +78,57 @@ const slides02 = [
       >
         Volunteer HERE!
       </NavLink>
+    </div>
+
+    <div class="z-10 flex justify-around flex-col sm:flex-row gap-y-3">
+      <ModalButton client:only="svelte" download={pamphletDownloadPath}>
+        <span slot="btn-label" class="flex gap-x-2 justify-center">
+          <span>Schedule</span>
+          <span
+            ><svg
+              class="h-9 w-6"
+              xmlns="http://www.w3.org/2000/svg"
+              xml:space="preserve"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="black"
+              fill-rule="evenodd"
+              stroke-linejoin="round"
+              stroke-miterlimit="2"
+              clip-rule="evenodd"
+              fill="currentColor"
+            >
+              <path
+                d="M2.049 11A10.012 10.012 0 0 1 11 2.049V4a1 1 0 0 0 2 0V2.049c4.721.47 8.481 4.23 8.951 8.951H20a1 1 0 0 0 0 2h1.951A10.012 10.012 0 0 1 13 21.951V20a1 1 0 0 0-2 0v1.951A10.012 10.012 0 0 1 2.049 13H4a1 1 0 0 0 0-2H2.049ZM11 8v3.586l-3.707 3.707a1 1 0 0 0 1.414 1.414l4-4A.997.997 0 0 0 13 12V8a1 1 0 0 0-2 0Z"
+              ></path>
+            </svg></span
+          >
+        </span>
+        <Image src={schedule} alt="2023 Festival Schedule" class="modal-img" />
+      </ModalButton>
+      <ModalButton client:only="svelte" download={pamphletDownloadPath}>
+        <span slot="btn-label" class="flex gap-x-2 justify-center">
+          <span>Map</span>
+          <span
+            ><svg
+              class="h-9 w-6"
+              xmlns="http://www.w3.org/2000/svg"
+              xml:space="preserve"
+              viewBox="0 0 18 18"
+              stroke-width="1"
+              stroke="black"
+              fill="currentColor"
+            >
+              <path
+                d="m13.597 15.059-6.293-3.332a.505.505 0 0 0-.519.03l-4.812 3.332a.5.5 0 0 0 .284.911h11.105a.5.5 0 0 0 .235-.941zM14.223 7.446a.5.5 0 0 0-.773-.303l-4.813 3.332a.498.498 0 0 0 .051.852l6.292 3.332a.501.501 0 0 0 .537-.044.5.5 0 0 0 .186-.506l-1.48-6.663zM12.221 6.351A.501.501 0 0 0 11.743 6H7.179c-.83 1.503-2.058 2.94-2.563 3.502-.284.316-.691.498-1.116.498s-.832-.182-1.116-.498a24.49 24.49 0 0 1-.843-.994l-1.21 5.446a.502.502 0 0 0 .773.519L12.027 6.91a.498.498 0 0 0 .194-.559z"
+              ></path><path
+                d="M3.5 9a.502.502 0 0 0 .372-.166C4.192 8.477 7 5.296 7 3.5 7 1.57 5.43 0 3.5 0S0 1.57 0 3.5c0 1.796 2.808 4.977 3.128 5.334.095.105.23.166.372.166zM2 3.5a1.5 1.5 0 1 1 3.001.001A1.5 1.5 0 0 1 2 3.5z"
+              ></path></svg
+            >
+          </span>
+        </span>
+        <Image src={map} alt="2023 Festival Schedule" class="modal-img" />
+      </ModalButton>
     </div>
 
     <ContentContainer id="festival">
@@ -246,3 +300,11 @@ const slides02 = [
     </ContentContainer>
   </div>
 </BaseLayout>
+
+<style>
+  .modal-img {
+    width: auto;
+    height: calc(100vh - 11rem);
+    object-fit: contain;
+  }
+</style>
