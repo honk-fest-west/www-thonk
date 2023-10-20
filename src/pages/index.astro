@@ -7,7 +7,8 @@ import ContentTitle from "@components/ContentTitle.astro";
 import Picture from "@components/Picture.astro";
 import PictureCard from "@components/PictureCard.astro";
 import HorizontalRule from "@components/HorizontalRule.astro";
-import Performing from "@/components/Performing.astro";
+import PerformingList from "@/components/PerformingList.astro";
+import CommunityList from "@/components/CommunityList.astro";
 
 // SVELTE COMPONENTS
 import NavLink from "@components/NavLink.svelte";
@@ -168,7 +169,12 @@ const slides02 = [
           </p>
         </div>
         <HorizontalRule />
-        <Performing />
+        <div
+          class="flex flex-col gap-y-7 lg:gap-y-0 lg:grid lg:grid-cols-2 lg:gap-x-7"
+        >
+          <PerformingList />
+          <CommunityList />
+        </div>
         <ImageCarousel slides={slides01} client:visible />
         <p class="italic font-semibold text-lg text-right mr-2">
           photos by <a href="https://www.espressobuzz.net/">espressobuzz</a>

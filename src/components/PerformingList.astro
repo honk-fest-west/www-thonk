@@ -1,12 +1,14 @@
 ---
+import ContentTitle from "./ContentTitle.astro";
 import performing from "@data/performing.toml";
 ---
 
 <section>
-  <ul>
+  <ContentTitle className="text-left">Performers</ContentTitle>
+  <ul class="mt-4">
     {
       performing.bands.map((band: { name: string; location: string }) => (
-        <li class="leading-6 sm:leading-8">
+        <li class="-indent-8 ml-8">
           <span>{band.name}</span> <span>&mdash;</span>
           <span>{band.location}</span>
         </li>
@@ -19,8 +21,6 @@ import performing from "@data/performing.toml";
   section {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
     font-weight: 700;
   }
 </style>

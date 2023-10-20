@@ -1,0 +1,19 @@
+---
+import ContentTitle from "./ContentTitle.astro";
+import community from "@data/community.toml";
+---
+
+<section class="flex flex-col lg:text-right font-semibold">
+  <ContentTitle className="text-left lg:text-right">
+    Community Resources
+  </ContentTitle>
+  <ul class="mt-4">
+    {
+      community.resources.map((resource: { name: string; url: string }) => (
+        <li class="mb-3">
+          <a href={resource.url}>{resource.name}</a>
+        </li>
+      ))
+    }
+  </ul>
+</section>
