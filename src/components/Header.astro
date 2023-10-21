@@ -3,14 +3,14 @@ import NavDesktop from "@/components/NavDesktop.svelte";
 import NavMobile from "@/components/NavMobile.svelte";
 
 const navLinks = [
-  { display: 'Volunteer', href: 'https://docs.google.com/forms/d/e/1FAIpQLSdViYO7T8YXCqQOfzHPJcb2ap432dLPZvXu12lTYKTi9egvqQ/viewform?usp=sf_link' },
-  { display: 'Festival', href: '#festival' },
-  { display: 'Wanna?', href: '#wanna' },
-  { display: 'How?', href: '#how' },
-  { display: 'Why?', href: '#why' },
-  { display: 'Hosts', href: '#tacomarama'},
-  { display: 'Contact', href: '#contact' }
-]
+  // { display: 'Volunteer', href: 'https://docs.google.com/forms/d/e/1FAIpQLSdViYO7T8YXCqQOfzHPJcb2ap432dLPZvXu12lTYKTi9egvqQ/viewform?usp=sf_link' },
+  { display: "Festival", href: "#festival" },
+  { display: "Wanna?", href: "#wanna" },
+  { display: "How?", href: "#how" },
+  { display: "Why?", href: "#why" },
+  { display: "Hosts", href: "#tacomarama" },
+  { display: "Contact", href: "#contact" },
+];
 ---
 
 <NavDesktop {navLinks} class="hidden lg:block" client:idle />
